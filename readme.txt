@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: Google +1, Google +1 Button, Like, Like button, Share, Share button, Google +1 like, Google +1 like button, Google +1 button like, Button like, Google +1 share, Google +1 share button, Google +1 button share
 Requires at least: 3.0
-Tested up to: 3.6.1
-Stable tag: 1.1.0
+Tested up to: 3.7.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Add Google +1 button to your WordPress website.
 
 Google +1 allows you to celebrate liked the article. The button also provides a current count of how many times your story has been liked on Google Search Engine.
 
-<a href="http://wordpress.org/extend/plugins/google-one/faq/" target="_blank">FAQ</a>
+<a href="http://wordpress.org/plugins/google-one/faq/" target="_blank">FAQ</a>
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 = Features =
@@ -23,9 +23,17 @@ Google +1 allows you to celebrate liked the article. The button also provides a 
 * Display: Select the button position: before the content, after, before and after or using a shortcode.
 * Display: Use one of 4 Sizes of button.
 
+= Recommended Plugins =
+
+The author of the Google +1 also recommends the following plugins:
+
+* <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=a0ca69e53accff1fea97aebbccd33d33">Updater Pro</a> with more useful features available. It allows to update plugins and WordPress core on several websites. It can make backup of all your files and database before updating.
+
 = Translation =
 
 * Russian (ru_RU)
+* Ukrainian (uk)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
@@ -39,7 +47,7 @@ We can fix some things for free for the users who provide translation of our plu
 
 == Installation ==
 
-1. Upload `google-plus-one` folder to the `/wp-content/plugins/` directory.
+1. Upload `google-one` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in your WordPress admin panel.
 3. You can adjust necessary settings through your WordPress admin panel in "Settings" > "Google +1".
 4. Create a page or a post and insert shortcode [bws_googleplusone] to the text.
@@ -70,15 +78,24 @@ Just paste code [bws_googleplusone] into the necessary page, post or text widget
 
 == Changelog ==
 
+= V1.1.1 - 08.11.2013 =
+* NEW : Add checking installed wordpress version.
+* NEW : The Ukrainian language file is added to the plugin.
+* Update : We updated all functionality for wordpress 3.7.1.
+* Update : Activation of radio button or checkbox by clicking on its label.
+
 = V1.1.0 - 25.09.2013 =
-* Bugfix: Fixed bug with shortcode.
-* NEW: Added new screenshots.
+* Bugfix : Fixed bug with shortcode.
+* NEW : Added new screenshots.
 
 = V1.0 - 01.09.2013 =
-* Bugfix: BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins.
-* Bugfix: The bug of position in the admin menu is fixed. 
+* Bugfix : BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins.
+* Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.1 =
+Add checking installed wordpress version. The Ukrainian language file is added to the plugin. We updated all functionality for wordpress 3.7.1. Activation of radio button or checkbox by clicking on its label.
 
 = V1.1.0 =
 Repeared bug with shortcode. Added new screenshots.
