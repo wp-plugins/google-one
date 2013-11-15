@@ -28,7 +28,7 @@ Google +1 allows you to celebrate liked the article. The button also provides a 
 The author of the Google +1 also recommends the following plugins:
 
 * <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=a0ca69e53accff1fea97aebbccd33d33">Updater Pro</a> with more useful features available. It allows to update plugins and WordPress core on several websites. It can make backup of all your files and database before updating.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=a0ca69e53accff1fea97aebbccd33d33">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 
 = Translation =
 
