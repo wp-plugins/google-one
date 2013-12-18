@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: Google +1, Google +1 Button, Like, Like button, Share, Share button, Google +1 like, Google +1 like button, Google +1 button like, Button like, Google +1 share, Google +1 share button, Google +1 button share
 Requires at least: 3.0
-Tested up to: 3.7.1
-Stable tag: 1.1.1
+Tested up to: 3.8
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,11 @@ Just paste code [bws_googleplusone] into the necessary page, post or text widget
 
 == Changelog ==
 
+= V1.1.2 - 18.12.2013 =
+* Update : We updated all functionality for wordpress 3.8.
+* Update : BWS plugins section is updated.
+* Bugfix : The bug of "Warning: array_merge();" is fixed.
+
 = V1.1.1 - 08.11.2013 =
 * NEW : Add checking installed wordpress version.
 * NEW : The Ukrainian language file is added to the plugin.
@@ -93,6 +98,9 @@ Just paste code [bws_googleplusone] into the necessary page, post or text widget
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.2 =
+We updated all functionality for wordpress 3.8. BWS plugins section is updated. The bug of "Warning: array_merge();" is fixed.
 
 = V1.1.1 =
 Add checking installed wordpress version. The Ukrainian language file is added to the plugin. We updated all functionality for wordpress 3.7.1. Activation of radio button or checkbox by clicking on its label.

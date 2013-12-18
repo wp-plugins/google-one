@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google +1 plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-07 17:57+0300\n"
-"PO-Revision-Date: 2013-11-07 17:59+0300\n"
+"POT-Creation-Date: 2013-12-17 19:43+0300\n"
+"PO-Revision-Date: 2013-12-17 19:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -14,12 +14,9 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-Language: Ukrainian\n"
-"X-Poedit-Country: UKRAINE\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:34
-#: google-plus-one.php:108
+#: google-plus-one.php:34 google-plus-one.php:114
 msgid "Google +1 Settings"
 msgstr "Установки Google +1"
 
@@ -27,136 +24,167 @@ msgstr "Установки Google +1"
 msgid "Google +1"
 msgstr "Google +1"
 
-#: google-plus-one.php:101
+#: google-plus-one.php:107
 msgid "Settings saved"
 msgstr "Установки збережено"
 
-#: google-plus-one.php:111
-msgid "For the correct work of the button do not use it locally or on a free hosting"
-msgstr "Для коректної роботи кнопки не використовуйте її на локальному сервері або безкоштовних хостингах."
+#: google-plus-one.php:116
+msgid "Notice:"
+msgstr ""
 
-#: google-plus-one.php:114
-msgid "If you want to insert the button in any place on the site, please use the following code:"
-msgstr "Для установки кнопки у будь-якому місці на сайті, будь ласка, вставте цей код:"
+#: google-plus-one.php:116
+msgid ""
+"The plugin's settings have been changed. In order to save them please don't "
+"forget to click the 'Save Changes' button."
+msgstr ""
 
-#: google-plus-one.php:119
+#: google-plus-one.php:118
+msgid ""
+"For the correct work of the button do not use it locally or on a free hosting"
+msgstr ""
+"Для коректної роботи кнопки не використовуйте її на локальному сервері або "
+"безкоштовних хостингах."
+
+#: google-plus-one.php:121
+msgid ""
+"If you want to insert the button in any place on the site, please use the "
+"following code:"
+msgstr ""
+"Для установки кнопки у будь-якому місці на сайті, будь ласка, вставте цей "
+"код:"
+
+#: google-plus-one.php:126
 msgid "Enable Google +1 Button"
 msgstr "Увімкнути кнопку Google +1"
 
-#: google-plus-one.php:123
+#: google-plus-one.php:130
 msgid "Enable or Disable Google+1 JavaScript"
 msgstr "Увімкнути або вимкнути Google+1 JavaScript"
 
-#: google-plus-one.php:128
+#: google-plus-one.php:135
 msgid "Show +1 count in the button"
 msgstr "Показувати лічильник +1 у кнопці"
 
-#: google-plus-one.php:132
+#: google-plus-one.php:139
 msgid "Display counters showing how many times your article has been liked"
 msgstr "Відображати лічильник кількості натиснень +1"
 
-#: google-plus-one.php:137
+#: google-plus-one.php:144
 msgid "Button Size:"
 msgstr "Розмір кнопки:"
 
-#: google-plus-one.php:140
+#: google-plus-one.php:147
 msgid "Standart"
 msgstr "Стандартна"
 
-#: google-plus-one.php:141
+#: google-plus-one.php:148
 msgid "Small"
 msgstr "Маленька"
 
-#: google-plus-one.php:142
+#: google-plus-one.php:149
 msgid "Medium"
 msgstr "Середня"
 
-#: google-plus-one.php:143
+#: google-plus-one.php:150
 msgid "Tall"
 msgstr "Висока"
 
-#: google-plus-one.php:145
+#: google-plus-one.php:152
 msgid "Please choose one of four different sizes of buttons"
 msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
 
-#: google-plus-one.php:149
+#: google-plus-one.php:156
 msgid "Button Position:"
 msgstr "Розташування кнопки:"
 
-#: google-plus-one.php:152
+#: google-plus-one.php:159
 msgid "Before Post"
 msgstr "Перед постом"
 
-#: google-plus-one.php:153
+#: google-plus-one.php:160
 msgid "After Post"
 msgstr "Після посту"
 
-#: google-plus-one.php:154
+#: google-plus-one.php:161
 msgid "Before And After Post"
 msgstr "Перед та після посту"
 
-#: google-plus-one.php:156
+#: google-plus-one.php:163
 msgid "Please select location for the button on the page"
 msgstr "Будь ласка, оберіть розташування кнопки на сторінці"
 
-#: google-plus-one.php:160
+#: google-plus-one.php:167
 msgid "Language:"
 msgstr "Мова:"
 
-#: google-plus-one.php:225
+#: google-plus-one.php:232
 msgid "Select the language to display information on the button"
 msgstr "Оберіть мову відображення інформації на кнопці"
 
-#: google-plus-one.php:229
+#: google-plus-one.php:236
 msgid "Show button:"
 msgstr "Відображати кнопку:"
 
-#: google-plus-one.php:234
+#: google-plus-one.php:241
 msgid "Show in posts"
 msgstr "В постах"
 
-#: google-plus-one.php:240
+#: google-plus-one.php:247
 msgid "Show in pages"
 msgstr "На сторінках"
 
-#: google-plus-one.php:246
+#: google-plus-one.php:253
 msgid "Show on the homepage"
 msgstr "На домашній сторінці"
 
-#: google-plus-one.php:250
+#: google-plus-one.php:257
 msgid "Please select the page on which you want to see the button"
 msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопку"
 
-#: google-plus-one.php:259
+#: google-plus-one.php:266
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: google-plus-one.php:287
+#: google-plus-one.php:273
+msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+msgstr ""
+
+#: google-plus-one.php:274
+msgid "Rate the plugin"
+msgstr ""
+
+#: google-plus-one.php:277
+msgid "If there is something wrong about it, please contact us"
+msgstr ""
+
+#: google-plus-one.php:305
 msgid "requires"
 msgstr "потребує"
 
-#: google-plus-one.php:287
-msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
-msgstr "чи вище, тому він був деактивований! Будь ласка оновіть WordPress та спробуйте ще раз."
+#: google-plus-one.php:305
+msgid ""
+"or higher, that is why it has been deactivated! Please upgrade WordPress and "
+"try again."
+msgstr ""
+"чи вище, тому він був деактивований! Будь ласка оновіть WordPress та "
+"спробуйте ще раз."
 
-#: google-plus-one.php:287
+#: google-plus-one.php:305
 msgid "Back to the WordPress"
 msgstr "Повернутися до WordPress на"
 
-#: google-plus-one.php:287
+#: google-plus-one.php:305
 msgid "Plugins page"
 msgstr "Сторінку плагинів"
 
-#: google-plus-one.php:393
-#: google-plus-one.php:404
+#: google-plus-one.php:441 google-plus-one.php:452
 msgid "Settings"
 msgstr "Установки"
 
-#: google-plus-one.php:405
+#: google-plus-one.php:453
 msgid "FAQ"
 msgstr "Часті питання"
 
-#: google-plus-one.php:406
+#: google-plus-one.php:454
 msgid "Support"
 msgstr "Підтримка"
-

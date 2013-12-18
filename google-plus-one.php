@@ -4,7 +4,7 @@ Plugin Name: Google +1
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Add Google +1 button to your WordPress website.
 Author: BestWebSoft
-Version: 1.1.1
+Version: 1.1.2
 Author URI: http://bestwebsoft.com
 License: GPLv2 or later
 */
@@ -37,7 +37,13 @@ if ( ! function_exists( 'gglplsn_admin_menu' ) ) {
 
 if ( ! function_exists ( 'gglplsn_default_options' ) ) {
 	function gglplsn_default_options() {
-		global $wpmu, $gglplsn_options;
+		global $wpmu, $gglplsn_options, $bws_plugin_info;
+
+		if ( function_exists( 'get_plugin_data' ) && ( ! isset( $bws_plugin_info ) || empty( $bws_plugin_info ) ) ) {
+			$plugin_info = get_plugin_data( __FILE__ );	
+			$bws_plugin_info = array( 'id' => '102', 'version' => $plugin_info["Version"] );
+		}
+
 		/* Default options */
 		$gglplsn_option_defaults	=	array(
 			'js'			=>	'1',
@@ -50,9 +56,10 @@ if ( ! function_exists ( 'gglplsn_default_options' ) ) {
 			'homepage'		=>	'1'
 		);
 		if ( 1 == $wpmu ) {
-			if ( ! get_site_option( 'gglplsn_options' ) )
+			if ( ! get_site_option( 'gglplsn_options' ) ) {
 				add_site_option( 'gglplsn_options', $gglplsn_option_defaults, '', 'yes' );
-			else {
+				$gglplsn_options = get_site_option( 'gglplsn_options' );
+			} else {
 				$gglplsn_options = get_site_option( 'gglplsn_options' );
 				foreach ( $gglplsn_option_defaults as $key => $value) {
 					if ( isset( $gglplsn_options['gglplsn_' . $key ] ) ) {
@@ -62,9 +69,10 @@ if ( ! function_exists ( 'gglplsn_default_options' ) ) {
 				}
 			}
 		} else {
-			if ( ! get_option( 'gglplsn_options' ) )
+			if ( ! get_option( 'gglplsn_options' ) ) {
 				add_option( 'gglplsn_options', $gglplsn_option_defaults, '', 'yes' );
-			else {
+				$gglplsn_options = get_option( 'gglplsn_options' );
+			} else {
 				$gglplsn_options = get_option( 'gglplsn_options' );
 				foreach ( $gglplsn_option_defaults as $key => $value) {
 					if ( isset( $gglplsn_options['gglplsn_' . $key ] ) ) {
@@ -74,7 +82,10 @@ if ( ! function_exists ( 'gglplsn_default_options' ) ) {
 				}
 			}
 		}
-		$gglplsn_options = array_merge( $gglplsn_option_defaults, $gglplsn_options );
+		if ( is_array($gglplsn_options ) )
+			$gglplsn_options = array_merge( $gglplsn_option_defaults, $gglplsn_options );
+		else
+			$gglplsn_options = $gglplsn_option_defaults;
 		update_option( 'gglplsn_options', $gglplsn_options );
 	}
 }
@@ -93,15 +104,16 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 			$gglplsn_options['posts']		=	isset( $_REQUEST['gglplsn_posts'] ) ? 1 : 0 ;
 			$gglplsn_options['pages']		=	isset( $_REQUEST['gglplsn_pages'] ) ? 1 : 0 ;
 			$gglplsn_options['homepage']	=	isset( $_REQUEST['gglplsn_homepage'] ) ? 1 : 0 ;
-			$message						=	__( 'Settings saved', 'google_plus_one' );
+			$message = __( 'Settings saved', 'google_plus_one' );
 			update_option( 'gglplsn_options', $gglplsn_options );
 		} ?>
 		<!--Google +1 admin page-->
 		<div class="wrap">
-			<form method="post" action="admin.php?page=google-plus-one.php" id="main">
+			<form method="post" action="admin.php?page=google-plus-one.php" id="gglplsn_settings_form">
 				<div class="icon32 icon32-bws" id="icon-options-general"></div>
 				<h2><?php echo __( 'Google +1 Settings', 'google_plus_one' ); ?></h2>
-				<div class="updated fade" <?php if ( empty( $message ) ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+				<div class="updated fade" <?php if ( ! isset( $_REQUEST['gglplsn_form_submit'] ) ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+				<div id="gglplsn_settings_notice" class="updated fade" style="display:none"><p><strong><?php _e( "Notice:", 'google_plus_one' ); ?></strong> <?php _e( "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button.", 'google_plus_one' ); ?></p></div>
 				<p>
 					<?php echo __( 'For the correct work of the button do not use it locally or on a free hosting', 'google_plus_one' ); ?><br />
 				</p>
@@ -247,7 +259,7 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 							</td>
 						</tr>
 					</tbody>
-				</table>												
+				</table>											
 				<input type="hidden" name="action" value="update" />
 				<input type="hidden" name="gglplsn_form_submit" value="1" />
 				<p class="submit">
@@ -255,6 +267,17 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 				</p>
 				<?php wp_nonce_field( plugin_basename( __FILE__ ), 'gglplsn_nonce_name' ); ?>
 			</form>
+			<br/>		
+			<div class="bws-plugin-reviews">
+				<div class="bws-plugin-reviews-rate">
+				<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'google_plus_one' ); ?>:<br/>
+				<a href="http://wordpress.org/support/view/plugin-reviews/google-one" target="_blank" title="Google +1 reviews"><?php _e( 'Rate the plugin', 'google_plus_one' ); ?></a><br/>
+				</div>
+				<div class="bws-plugin-reviews-support">
+				<?php _e( 'If there is something wrong about it, please contact us', 'google_plus_one' ); ?>:<br/>
+				<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
+				</div>
+			</div>
 		</div><!-- .wrap -->
 	<?php }
 }
@@ -288,7 +311,12 @@ if ( ! function_exists ( 'gglplsn_version_check' ) ) {
 if ( ! function_exists( 'gglplsn_admin_head' ) ) {
 	function gglplsn_admin_head() {
 		/* Style for admin page */
-		wp_enqueue_style( 'gglplsnStylesheet', plugins_url( 'css/style.css', __FILE__ ) );
+		global $wp_version;
+		if ( $wp_version < 3.8 )
+			wp_enqueue_style( 'gglplsn_style', plugins_url( 'css/style_wp_before_3.8.css', __FILE__ ) );	
+		else
+			wp_enqueue_style( 'gglplsn_style', plugins_url( 'css/style.css', __FILE__ ) );
+
 		if ( isset( $_GET['page'] ) && $_GET['page'] == "bws_plugins" )
 			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js', __FILE__ ) );
 	}
@@ -310,6 +338,31 @@ if ( ! function_exists( 'gglplsn_js' ) ) {
 				<?php if ( 'en-US' == $gglplsn_options['lang'] ) { ?>
 					{'lang': '<?php echo $gglplsn_options['lang']; ?>'}
 				<?php } ?>
+			</script>
+		<?php }
+	}
+}
+
+if ( ! function_exists('gglplsn_admin_js') ) {
+	function gglplsn_admin_js() {
+		if ( isset( $_GET['page'] ) && "google-plus-one.php" == $_GET['page'] ) {
+			/* add notice about changing in the settings page */
+			?>
+			<script type="text/javascript">
+				(function($) {
+					$(document).ready( function() {
+						$( '#gglplsn_settings_form input' ).bind( "change click select", function() {
+							if ( $( this ).attr( 'type' ) != 'submit' ) {
+								$( '.updated.fade' ).css( 'display', 'none' );
+								$( '#gglplsn_settings_notice' ).css( 'display', 'block' );
+							};
+						});
+						$( '#gglplsn_settings_form select' ).bind( "change", function() {
+								$( '.updated.fade' ).css( 'display', 'none' );
+								$( '#gglplsn_settings_notice' ).css( 'display', 'block' );
+						});
+					});
+				})(jQuery);
 			</script>
 		<?php }
 	}
@@ -413,9 +466,11 @@ if( ! function_exists( 'gglplsn_uninstall' ) ) {
 add_action( 'admin_menu', 'gglplsn_admin_menu' );
 add_action( 'init', 'gglplsn_init' );
 add_action( 'init', 'gglplsn_default_options' );
+add_action( 'admin_init', 'gglplsn_default_options' );
 add_action( 'admin_init', 'gglplsn_version_check' );
 /* Adds "Settings" link to the plugin action page */
 add_action( 'wp_head', 'gglplsn_js' );
+add_action( 'admin_head', 'gglplsn_admin_js' );
 add_action( 'admin_enqueue_scripts', 'gglplsn_admin_head' );
 
 add_shortcode( 'bws_googleplusone', 'gglplsn_shortcode' );
