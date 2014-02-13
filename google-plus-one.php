@@ -4,13 +4,13 @@ Plugin Name: Google +1
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Add Google +1 button to your WordPress website.
 Author: BestWebSoft
-Version: 1.1.2
+Version: 1.1.3
 Author URI: http://bestwebsoft.com
 License: GPLv2 or later
 */
 
 /*	
-	@ Copyright 2013  BestWebSoft  ( http://support.bestwebsoft.com )
+	@ Copyright 2014  BestWebSoft  ( http://support.bestwebsoft.com )
 	
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
@@ -270,11 +270,11 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 			<br/>		
 			<div class="bws-plugin-reviews">
 				<div class="bws-plugin-reviews-rate">
-				<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'google_plus_one' ); ?>:<br/>
+				<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'google_plus_one' ); ?>: 
 				<a href="http://wordpress.org/support/view/plugin-reviews/google-one" target="_blank" title="Google +1 reviews"><?php _e( 'Rate the plugin', 'google_plus_one' ); ?></a><br/>
 				</div>
 				<div class="bws-plugin-reviews-support">
-				<?php _e( 'If there is something wrong about it, please contact us', 'google_plus_one' ); ?>:<br/>
+				<?php _e( 'If there is something wrong about it, please contact us', 'google_plus_one' ); ?>: 
 				<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
 				</div>
 			</div>
@@ -287,8 +287,6 @@ if ( ! function_exists ( 'gglplsn_init' ) ) {
 	function gglplsn_init() {
 		/* Internationalization */
 		load_plugin_textdomain( 'google_plus_one', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-		/* Other init stuff, be sure to it after load_plugins_textdomain if it involves translated text(!) */
-		load_plugin_textdomain( 'bestwebsoft', false, dirname( plugin_basename( __FILE__ ) ) . '/bws_menu/languages/' );
 	}
 }
 
@@ -316,9 +314,6 @@ if ( ! function_exists( 'gglplsn_admin_head' ) ) {
 			wp_enqueue_style( 'gglplsn_style', plugins_url( 'css/style_wp_before_3.8.css', __FILE__ ) );	
 		else
 			wp_enqueue_style( 'gglplsn_style', plugins_url( 'css/style.css', __FILE__ ) );
-
-		if ( isset( $_GET['page'] ) && $_GET['page'] == "bws_plugins" )
-			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js', __FILE__ ) );
 	}
 }
 

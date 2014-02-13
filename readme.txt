@@ -1,10 +1,10 @@
-﻿=== Google +1 ===
+﻿=== Google 1 ===
 Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: Google +1, Google +1 Button, Like, Like button, Share, Share button, Google +1 like, Google +1 like button, Google +1 button like, Button like, Google +1 share, Google +1 share button, Google +1 button share
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.1.2
+Tested up to: 3.8.1
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,14 @@ In WordPress admin panel go to "Settings", find the Google +1 settings page and 
 
 Just paste code [bws_googleplusone] into the necessary page, post or text widget.
 
+= I have some problems with the plugin's work. What Information should I provide to receive proper support? =
+
+Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+1. the link to the page where the problem occurs
+2. the name of the plugin and its version. If you are using a pro version - your order number.
+3. the version of your WordPress installation
+4. copy and paste into the message your system status report. Please read more here: <a href="http://bestwebsoft.com/wp-content/uploads/manual/wp_plugin/general/System_Status.pdf" target="_blank">System_Status.pdf</a>
+
 == Screenshots ==
 
 1. Google +1 Settings page.
@@ -77,6 +85,11 @@ Just paste code [bws_googleplusone] into the necessary page, post or text widget
 3. Google +1 Using shortcode in widget area.
 
 == Changelog ==
+
+= V1.1.3 - 13.02.2014 =
+* Update : Screenshots are updated.
+* Update : BWS plugins section is updated.
+* Update : We updated all functionality for wordpress 3.8.1.
 
 = V1.1.2 - 18.12.2013 =
 * Update : We updated all functionality for wordpress 3.8.
@@ -98,6 +111,9 @@ Just paste code [bws_googleplusone] into the necessary page, post or text widget
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.3 =
+Screenshots are updated. BWS plugins section is updated. We updated all functionality for wordpress 3.8.1.
 
 = V1.1.2 =
 We updated all functionality for wordpress 3.8. BWS plugins section is updated. The bug of "Warning: array_merge();" is fixed.
