@@ -1,10 +1,10 @@
-﻿=== Google 1 ===
+﻿=== Google +1 ===
 Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: Google +1, Google +1 Button, Like, Like button, Share, Share button, Google +1 like, Google +1 like button, Google +1 button like, Button like, Google +1 share, Google +1 share button, Google +1 button share
 Requires at least: 3.0
 Tested up to: 3.8.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,10 @@ Add Google +1 button to your WordPress website.
 Google +1 allows you to celebrate liked the article. The button also provides a current count of how many times your story has been liked on Google Search Engine.
 
 <a href="http://wordpress.org/plugins/google-one/faq/" target="_blank">FAQ</a>
+
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
+
+<a href="http://bestwebsoft.com/plugin/google-one-pro/?k=ecb8dc3b466b95504db546e515600a5e" target="_blank">Upgrade to Pro Version</a>
 
 = Features =
 
@@ -86,7 +89,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
-= V1.1.3 - 13.02.2014 =
+= V1.1.4 - 05.03.2014 =
+* Budfix : Plugin optimization is done.
+* Update : Plugin tabs is added.
+
+= V1.1.3 - 12.02.2014 =
 * Update : Screenshots are updated.
 * Update : BWS plugins section is updated.
 * Update : We updated all functionality for wordpress 3.8.1.
@@ -111,6 +118,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.4 =
+Plugin optimization is done. Plugin tabs is added.
 
 = V1.1.3 =
 Screenshots are updated. BWS plugins section is updated. We updated all functionality for wordpress 3.8.1.

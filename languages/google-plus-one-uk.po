@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google +1 plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-17 19:43+0300\n"
-"PO-Revision-Date: 2013-12-17 19:43+0300\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-02-27 17:49+0300\n"
+"PO-Revision-Date: 2014-02-27 17:49+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,8 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:34 google-plus-one.php:114
+#: google-plus-one.php:34
+#: google-plus-one.php:256
 msgid "Google +1 Settings"
 msgstr "Установки Google +1"
 
@@ -24,167 +25,276 @@ msgstr "Установки Google +1"
 msgid "Google +1"
 msgstr "Google +1"
 
-#: google-plus-one.php:107
+#: google-plus-one.php:127
 msgid "Settings saved"
 msgstr "Установки збережено"
 
-#: google-plus-one.php:116
-msgid "Notice:"
-msgstr ""
-
-#: google-plus-one.php:116
-msgid ""
-"The plugin's settings have been changed. In order to save them please don't "
-"forget to click the 'Save Changes' button."
-msgstr ""
-
-#: google-plus-one.php:118
-msgid ""
-"For the correct work of the button do not use it locally or on a free hosting"
-msgstr ""
-"Для коректної роботи кнопки не використовуйте її на локальному сервері або "
-"безкоштовних хостингах."
-
-#: google-plus-one.php:121
-msgid ""
-"If you want to insert the button in any place on the site, please use the "
-"following code:"
-msgstr ""
-"Для установки кнопки у будь-якому місці на сайті, будь ласка, вставте цей "
-"код:"
-
-#: google-plus-one.php:126
-msgid "Enable Google +1 Button"
-msgstr "Увімкнути кнопку Google +1"
-
-#: google-plus-one.php:130
-msgid "Enable or Disable Google+1 JavaScript"
-msgstr "Увімкнути або вимкнути Google+1 JavaScript"
-
-#: google-plus-one.php:135
-msgid "Show +1 count in the button"
-msgstr "Показувати лічильник +1 у кнопці"
-
-#: google-plus-one.php:139
-msgid "Display counters showing how many times your article has been liked"
-msgstr "Відображати лічильник кількості натиснень +1"
-
-#: google-plus-one.php:144
-msgid "Button Size:"
-msgstr "Розмір кнопки:"
-
-#: google-plus-one.php:147
-msgid "Standart"
-msgstr "Стандартна"
-
-#: google-plus-one.php:148
-msgid "Small"
-msgstr "Маленька"
-
 #: google-plus-one.php:149
-msgid "Medium"
-msgstr "Середня"
-
-#: google-plus-one.php:150
-msgid "Tall"
-msgstr "Висока"
-
-#: google-plus-one.php:152
-msgid "Please choose one of four different sizes of buttons"
-msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
-
-#: google-plus-one.php:156
-msgid "Button Position:"
-msgstr "Розташування кнопки:"
-
-#: google-plus-one.php:159
-msgid "Before Post"
-msgstr "Перед постом"
-
-#: google-plus-one.php:160
-msgid "After Post"
-msgstr "Після посту"
-
-#: google-plus-one.php:161
-msgid "Before And After Post"
-msgstr "Перед та після посту"
-
-#: google-plus-one.php:163
-msgid "Please select location for the button on the page"
-msgstr "Будь ласка, оберіть розташування кнопки на сторінці"
-
-#: google-plus-one.php:167
-msgid "Language:"
-msgstr "Мова:"
-
-#: google-plus-one.php:232
-msgid "Select the language to display information on the button"
-msgstr "Оберіть мову відображення інформації на кнопці"
-
-#: google-plus-one.php:236
-msgid "Show button:"
-msgstr "Відображати кнопку:"
-
-#: google-plus-one.php:241
-msgid "Show in posts"
-msgstr "В постах"
-
-#: google-plus-one.php:247
-msgid "Show in pages"
-msgstr "На сторінках"
-
-#: google-plus-one.php:253
-msgid "Show on the homepage"
-msgstr "На домашній сторінці"
-
-#: google-plus-one.php:257
-msgid "Please select the page on which you want to see the button"
-msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопку"
-
-#: google-plus-one.php:266
-msgid "Save Changes"
-msgstr "Зберегти зміни"
-
-#: google-plus-one.php:273
-msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#: google-plus-one.php:188
+msgid "Wrong license key"
 msgstr ""
 
-#: google-plus-one.php:274
-msgid "Rate the plugin"
+#: google-plus-one.php:181
+msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
 msgstr ""
 
-#: google-plus-one.php:277
-msgid "If there is something wrong about it, please contact us"
+#: google-plus-one.php:190
+msgid "This license key is bind to another site"
 msgstr ""
 
-#: google-plus-one.php:305
-msgid "requires"
-msgstr "потребує"
-
-#: google-plus-one.php:305
-msgid ""
-"or higher, that is why it has been deactivated! Please upgrade WordPress and "
-"try again."
+#: google-plus-one.php:192
+msgid "Unfortunately, you have exceeded the number of available tries. Please, upload the plugin manually."
 msgstr ""
-"чи вище, тому він був деактивований! Будь ласка оновіть WordPress та "
-"спробуйте ще раз."
 
-#: google-plus-one.php:305
-msgid "Back to the WordPress"
-msgstr "Повернутися до WordPress на"
+#: google-plus-one.php:210
+msgid "Failed to open the zip archive. Please, upload the plugin manually"
+msgstr ""
 
-#: google-plus-one.php:305
-msgid "Plugins page"
-msgstr "Сторінку плагинів"
+#: google-plus-one.php:216
+msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
+msgstr ""
 
-#: google-plus-one.php:441 google-plus-one.php:452
+#: google-plus-one.php:220
+#: google-plus-one.php:229
+msgid "Failed to download the zip archive. Please, upload the plugin manually"
+msgstr ""
+
+#: google-plus-one.php:233
+msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
+msgstr ""
+
+#: google-plus-one.php:248
+msgid "Please, enter Your license key"
+msgstr ""
+
+#: google-plus-one.php:258
+#: google-plus-one.php:631
+#: google-plus-one.php:642
 msgid "Settings"
 msgstr "Установки"
 
+#: google-plus-one.php:259
+#, fuzzy
+msgid "Extra settings"
+msgstr "Установки"
+
+#: google-plus-one.php:260
+msgid "Go PRO"
+msgstr ""
+
+#: google-plus-one.php:263
+msgid "Notice:"
+msgstr ""
+
+#: google-plus-one.php:263
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr ""
+
+#: google-plus-one.php:266
+msgid "For the correct work of the button do not use it locally or on a free hosting"
+msgstr "Для коректної роботи кнопки не використовуйте її на локальному сервері або безкоштовних хостингах."
+
+#: google-plus-one.php:267
+msgid "If you want to insert the button in any place on the site, please use the following code:"
+msgstr "Для установки кнопки у будь-якому місці на сайті, будь ласка, вставте цей код:"
+
+#: google-plus-one.php:272
+msgid "Enable Google +1 Button"
+msgstr "Увімкнути кнопку Google +1"
+
+#: google-plus-one.php:276
+msgid "Enable or Disable Google+1 JavaScript"
+msgstr "Увімкнути або вимкнути Google+1 JavaScript"
+
+#: google-plus-one.php:281
+msgid "Show +1 count in the button"
+msgstr "Показувати лічильник +1 у кнопці"
+
+#: google-plus-one.php:285
+msgid "Display counters showing how many times your article has been liked"
+msgstr "Відображати лічильник кількості натиснень +1"
+
+#: google-plus-one.php:290
+msgid "Button Size:"
+msgstr "Розмір кнопки:"
+
+#: google-plus-one.php:293
+msgid "Standart"
+msgstr "Стандартна"
+
+#: google-plus-one.php:294
+msgid "Small"
+msgstr "Маленька"
+
+#: google-plus-one.php:295
+msgid "Medium"
+msgstr "Середня"
+
+#: google-plus-one.php:296
+msgid "Tall"
+msgstr "Висока"
+
+#: google-plus-one.php:298
+msgid "Please choose one of four different sizes of buttons"
+msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
+
+#: google-plus-one.php:302
+msgid "Button Position:"
+msgstr "Розташування кнопки:"
+
+#: google-plus-one.php:305
+msgid "Before Post"
+msgstr "Перед постом"
+
+#: google-plus-one.php:306
+msgid "After Post"
+msgstr "Після посту"
+
+#: google-plus-one.php:307
+msgid "Before And After Post"
+msgstr "Перед та після посту"
+
+#: google-plus-one.php:309
+msgid "Please select location for the button on the page"
+msgstr "Будь ласка, оберіть розташування кнопки на сторінці"
+
+#: google-plus-one.php:313
+msgid "Language:"
+msgstr "Мова:"
+
+#: google-plus-one.php:378
+msgid "Select the language to display information on the button"
+msgstr "Оберіть мову відображення інформації на кнопці"
+
+#: google-plus-one.php:382
+msgid "Show button:"
+msgstr "Відображати кнопку:"
+
+#: google-plus-one.php:387
+msgid "Show in posts"
+msgstr "В постах"
+
+#: google-plus-one.php:393
+msgid "Show in pages"
+msgstr "На сторінках"
+
+#: google-plus-one.php:399
+msgid "Show on the homepage"
+msgstr "На домашній сторінці"
+
+#: google-plus-one.php:403
+msgid "Please select the page on which you want to see the button"
+msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопку"
+
+#: google-plus-one.php:412
+#: google-plus-one.php:448
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: google-plus-one.php:418
+msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+msgstr ""
+
+#: google-plus-one.php:419
+msgid "Rate the plugin"
+msgstr ""
+
+#: google-plus-one.php:422
+msgid "If there is something wrong about it, please contact us"
+msgstr ""
+
+#: google-plus-one.php:430
+msgid "Please choose the necessary post types (or single pages) where Google +1 button will be displayed:"
+msgstr ""
+
+#: google-plus-one.php:437
+#, fuzzy
+msgid "Show URL for pages"
+msgstr "На сторінках"
+
+#: google-plus-one.php:443
+msgid "Example of site pages' tree"
+msgstr ""
+
 #: google-plus-one.php:453
+msgid "This functionality is available in the Pro version of the plugin. For more details, please follow the link"
+msgstr ""
+
+#: google-plus-one.php:467
+msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
+msgstr ""
+
+#: google-plus-one.php:469
+msgid "Please, go to"
+msgstr ""
+
+#: google-plus-one.php:469
+#, fuzzy
+msgid "the setting page"
+msgstr "На сторінках"
+
+#: google-plus-one.php:470
+msgid "You will be redirected automatically in 5 seconds."
+msgstr ""
+
+#: google-plus-one.php:475
+msgid "You can download and activate"
+msgstr ""
+
+#: google-plus-one.php:477
+msgid "version of this plugin by entering Your license key."
+msgstr ""
+
+#: google-plus-one.php:479
+msgid "You can find your license key on your personal page Client area, by clicking on the link"
+msgstr ""
+
+#: google-plus-one.php:481
+msgid "(your username is the email you specify when purchasing the product)."
+msgstr ""
+
+#: google-plus-one.php:489
+#: google-plus-one.php:499
+msgid "Go!"
+msgstr ""
+
+#: google-plus-one.php:492
+msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+msgstr ""
+
+#: google-plus-one.php:520
+msgid "requires"
+msgstr "потребує"
+
+#: google-plus-one.php:520
+msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgstr "чи вище, тому він був деактивований! Будь ласка оновіть WordPress та спробуйте ще раз."
+
+#: google-plus-one.php:520
+msgid "Back to the WordPress"
+msgstr "Повернутися до WordPress на"
+
+#: google-plus-one.php:520
+msgid "Plugins page"
+msgstr "Сторінку плагинів"
+
+#: google-plus-one.php:643
 msgid "FAQ"
 msgstr "Часті питання"
 
-#: google-plus-one.php:454
+#: google-plus-one.php:644
 msgid "Support"
 msgstr "Підтримка"
+
+#: google-plus-one.php:695
+msgid "Learn More"
+msgstr ""
+
+#: google-plus-one.php:697
+msgid "It's time to upgrade your <strong>Google +1</strong> to <strong>PRO</strong> version"
+msgstr ""
+
+#: google-plus-one.php:698
+msgid "Extend standard plugin functionality with new great options"
+msgstr ""
+
