@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google +1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-27 17:45+0300\n"
-"PO-Revision-Date: 2014-02-27 17:48+0300\n"
+"POT-Creation-Date: 2014-04-14 12:36+0300\n"
+"PO-Revision-Date: 2014-04-14 12:38+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -16,282 +16,297 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:34
-#: google-plus-one.php:256
+#: google-plus-one.php:72
+#: google-plus-one.php:291
 msgid "Google +1 Settings"
 msgstr "Google +1 Настройки"
 
-#: google-plus-one.php:34
+#: google-plus-one.php:72
 msgid "Google +1"
 msgstr "Google +1"
 
-#: google-plus-one.php:127
+#: google-plus-one.php:158
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: google-plus-one.php:149
-#: google-plus-one.php:188
+#: google-plus-one.php:184
+#: google-plus-one.php:223
 msgid "Wrong license key"
 msgstr "Неправильный лицензионный ключ"
 
-#: google-plus-one.php:181
+#: google-plus-one.php:216
 msgid "Something went wrong. Try again later. If the error will appear again, please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</a>. We are sorry for inconvenience."
 msgstr "Что-то пошло не так. Повторите попытку позже. Если ошибка появится снова, пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft.com>BestWebSoft</a>. Приносим извинения за неудобства."
 
-#: google-plus-one.php:190
+#: google-plus-one.php:225
 msgid "This license key is bind to another site"
 msgstr "Этот лицензионный ключ привязан к другому сайту"
 
-#: google-plus-one.php:192
+#: google-plus-one.php:227
 msgid "Unfortunately, you have exceeded the number of available tries. Please, upload the plugin manually."
 msgstr "К сожалению, вы превысили количество доступных попыток в день. Пожалуйста, загрузите плагин вручную."
 
-#: google-plus-one.php:210
+#: google-plus-one.php:245
 msgid "Failed to open the zip archive. Please, upload the plugin manually"
 msgstr "Не удалось открыть архив ZIP. Пожалуйста, загрузите плагин вручную"
 
-#: google-plus-one.php:216
+#: google-plus-one.php:251
 msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
 msgstr "Ваш сервер не поддерживает ни библиотеку ZipArchive, ни библиотеку Phar. Пожалуйста, загрузите плагин вручную"
 
-#: google-plus-one.php:220
-#: google-plus-one.php:229
+#: google-plus-one.php:255
+#: google-plus-one.php:264
 msgid "Failed to download the zip archive. Please, upload the plugin manually"
 msgstr "Не удалось загрузить архив плагина. Пожалуйста, загрузите плагин вручную"
 
-#: google-plus-one.php:233
+#: google-plus-one.php:268
 msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvienience."
 msgstr "Что-то пошло не так. Повторите попытку позже или загрузите плагин вручную. Приносим извинения за неудобства."
 
-#: google-plus-one.php:248
+#: google-plus-one.php:283
 msgid "Please, enter Your license key"
 msgstr "Пожалуйста, введите Ваш лицензионный ключ"
 
-#: google-plus-one.php:258
-#: google-plus-one.php:631
-#: google-plus-one.php:642
+#: google-plus-one.php:293
+#: google-plus-one.php:612
+#: google-plus-one.php:623
 msgid "Settings"
 msgstr "Настройки"
 
-#: google-plus-one.php:259
+#: google-plus-one.php:294
 msgid "Extra settings"
 msgstr "Дополнительные настройки"
 
-#: google-plus-one.php:260
+#: google-plus-one.php:295
 msgid "Go PRO"
 msgstr "Перейти на PRO версию"
 
-#: google-plus-one.php:263
+#: google-plus-one.php:298
 msgid "Notice:"
 msgstr "Внимание:"
 
-#: google-plus-one.php:263
+#: google-plus-one.php:298
 msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
 msgstr "Настройки плагина были изменены. Для того, чтобы сохранить их, пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
 
-#: google-plus-one.php:266
+#: google-plus-one.php:301
 msgid "For the correct work of the button do not use it locally or on a free hosting"
 msgstr "Для правильной работы кнопки не используйте её на локальном сервере или бесплатных хостингах"
 
-#: google-plus-one.php:267
+#: google-plus-one.php:302
 msgid "If you want to insert the button in any place on the site, please use the following code:"
 msgstr "Для установки кнопки в любом месте на сайте, пожалуйста, вставьте следующий код:"
 
-#: google-plus-one.php:272
+#: google-plus-one.php:307
 msgid "Enable Google +1 Button"
 msgstr "Включить кнопку Google +1"
 
-#: google-plus-one.php:276
+#: google-plus-one.php:311
 msgid "Enable or Disable Google+1 JavaScript"
 msgstr "Включить либо Выключить Google+1 JavaScript"
 
-#: google-plus-one.php:281
+#: google-plus-one.php:316
 msgid "Show +1 count in the button"
 msgstr "Показывать счетчик +1 в кнопке"
 
-#: google-plus-one.php:285
+#: google-plus-one.php:320
 msgid "Display counters showing how many times your article has been liked"
 msgstr "Показывать счетчик количества нажатий +1"
 
-#: google-plus-one.php:290
+#: google-plus-one.php:325
 msgid "Button Size:"
 msgstr "Размер кнопки:"
 
-#: google-plus-one.php:293
+#: google-plus-one.php:328
 msgid "Standart"
 msgstr "Стандартная"
 
-#: google-plus-one.php:294
+#: google-plus-one.php:329
 msgid "Small"
 msgstr "Маленькая"
 
-#: google-plus-one.php:295
+#: google-plus-one.php:330
 msgid "Medium"
 msgstr "Средняя"
 
-#: google-plus-one.php:296
+#: google-plus-one.php:331
 msgid "Tall"
 msgstr "Высокая"
 
-#: google-plus-one.php:298
+#: google-plus-one.php:333
 msgid "Please choose one of four different sizes of buttons"
 msgstr "Пожалуйста выберите один из четырех вариантов размера кнопки"
 
-#: google-plus-one.php:302
+#: google-plus-one.php:337
 msgid "Button Position:"
 msgstr "Положение кнопки:"
 
-#: google-plus-one.php:305
+#: google-plus-one.php:340
 msgid "Before Post"
 msgstr "Перед постом"
 
-#: google-plus-one.php:306
+#: google-plus-one.php:341
 msgid "After Post"
 msgstr "После поста"
 
-#: google-plus-one.php:307
+#: google-plus-one.php:342
 msgid "Before And After Post"
 msgstr "Перед и После поста"
 
-#: google-plus-one.php:309
+#: google-plus-one.php:344
 msgid "Please select location for the button on the page"
 msgstr "Пожалуйста выберите расположение кнопки на странице"
 
-#: google-plus-one.php:313
+#: google-plus-one.php:348
 msgid "Language:"
 msgstr "Язык:"
 
-#: google-plus-one.php:378
+#: google-plus-one.php:358
 msgid "Select the language to display information on the button"
 msgstr "Выберите язык отображения информации на кнопке"
 
-#: google-plus-one.php:382
+#: google-plus-one.php:362
 msgid "Show button:"
 msgstr "Показывать кнопку:"
 
-#: google-plus-one.php:387
+#: google-plus-one.php:367
 msgid "Show in posts"
 msgstr "В постах"
 
-#: google-plus-one.php:393
+#: google-plus-one.php:373
 msgid "Show in pages"
 msgstr "На страницах"
 
-#: google-plus-one.php:399
+#: google-plus-one.php:379
 msgid "Show on the homepage"
 msgstr "На домашней странице"
 
-#: google-plus-one.php:403
+#: google-plus-one.php:383
 msgid "Please select the page on which you want to see the button"
 msgstr "Пожалуйста выберите страницу, на который Вы хотите показать кнопку"
 
-#: google-plus-one.php:412
-#: google-plus-one.php:448
+#: google-plus-one.php:391
+#: google-plus-one.php:430
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: google-plus-one.php:418
+#: google-plus-one.php:397
 msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
 msgstr " Если вам понравился плагин то поставте нам 5 звезд на WordPress"
 
-#: google-plus-one.php:419
+#: google-plus-one.php:398
 msgid "Rate the plugin"
 msgstr "Оценить плагин"
 
-#: google-plus-one.php:422
+#: google-plus-one.php:401
 msgid "If there is something wrong about it, please contact us"
 msgstr "Если у вас есть какие-то вопросы, обращайтесь"
 
-#: google-plus-one.php:430
+#: google-plus-one.php:412
 msgid "Please choose the necessary post types (or single pages) where Google +1 button will be displayed:"
 msgstr "Пожалуйста, выберите те типы постов (или отдельные страницы), где будет отображатся кнопка Google +1:"
 
-#: google-plus-one.php:437
+#: google-plus-one.php:419
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: google-plus-one.php:443
+#: google-plus-one.php:425
 msgid "Example of site pages' tree"
 msgstr "Пример дерева страниц сайта"
 
-#: google-plus-one.php:453
-msgid "This functionality is available in the Pro version of the plugin. For more details, please follow the link"
-msgstr "Данный функционал доступен в Про версии плагина. Для более детальной информации смотрите"
+#: google-plus-one.php:435
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
 
-#: google-plus-one.php:467
-msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
-msgstr "Поздравляем! PRO версия плагина была успешно загружена и активирована."
+#: google-plus-one.php:442
+msgid "Unlock premium options by upgrading to a PRO version."
+msgstr "Активируйте премиум опции обновившись до PRO версии."
 
-#: google-plus-one.php:469
-msgid "Please, go to"
-msgstr "Пожалуйста, перейдите на"
-
-#: google-plus-one.php:469
-msgid "the setting page"
-msgstr "страницу настроек"
-
-#: google-plus-one.php:470
-msgid "You will be redirected automatically in 5 seconds."
-msgstr "Вы будете перенаправлены автоматически через 5 секунд."
-
-#: google-plus-one.php:475
-msgid "You can download and activate"
-msgstr "Вы можете скачать и активировать"
-
-#: google-plus-one.php:477
-msgid "version of this plugin by entering Your license key."
-msgstr "версию этого плагина, введя ваш лицензионный ключ."
-
-#: google-plus-one.php:479
-msgid "You can find your license key on your personal page Client area, by clicking on the link"
-msgstr "Вы можете найти ваш лицензионный ключ на вашей личной странице Client area, нажав на ссылку"
-
-#: google-plus-one.php:481
-msgid "(your username is the email you specify when purchasing the product)."
-msgstr "(ваше имя пользователя - это электронный адрес, указанный при покупке продукта)."
-
-#: google-plus-one.php:489
-#: google-plus-one.php:499
-msgid "Go!"
-msgstr "Перейти!"
-
-#: google-plus-one.php:492
-msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
-msgstr "К сожалению, вы превысили количество доступных попыток в день. Пожалуйста, загрузите плагин вручную."
-
-#: google-plus-one.php:520
-msgid "requires"
-msgstr "требует"
-
-#: google-plus-one.php:520
-msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
-msgstr "или выше, поэтому он был деактивирован! Пожалуйста обновите WordPress и попробуйте еще раз."
-
-#: google-plus-one.php:520
-msgid "Back to the WordPress"
-msgstr "Вернуться к WordPress на"
-
-#: google-plus-one.php:520
-msgid "Plugins page"
-msgstr "Страницу плагинов"
-
-#: google-plus-one.php:643
-msgid "FAQ"
-msgstr "FAQ"
-
-#: google-plus-one.php:644
-msgid "Support"
-msgstr "Поддержка"
-
-#: google-plus-one.php:695
+#: google-plus-one.php:443
+#: google-plus-one.php:685
 msgid "Learn More"
 msgstr "Подробнее"
 
-#: google-plus-one.php:697
+#: google-plus-one.php:446
+msgid "Go"
+msgstr "Перейти на"
+
+#: google-plus-one.php:458
+msgid "Congratulations! The PRO version of the plugin is successfully download and activated."
+msgstr "Поздравляем! PRO версия плагина была успешно загружена и активирована."
+
+#: google-plus-one.php:460
+msgid "Please, go to"
+msgstr "Пожалуйста, перейдите на"
+
+#: google-plus-one.php:460
+msgid "the setting page"
+msgstr "страницу настроек"
+
+#: google-plus-one.php:461
+msgid "You will be redirected automatically in 5 seconds."
+msgstr "Вы будете перенаправлены автоматически через 5 секунд."
+
+#: google-plus-one.php:466
+msgid "You can download and activate"
+msgstr "Вы можете скачать и активировать"
+
+#: google-plus-one.php:468
+msgid "version of this plugin by entering Your license key."
+msgstr "версию этого плагина, введя ваш лицензионный ключ."
+
+#: google-plus-one.php:470
+msgid "You can find your license key on your personal page Client area, by clicking on the link"
+msgstr "Вы можете найти ваш лицензионный ключ на вашей личной странице Client area, нажав на ссылку"
+
+#: google-plus-one.php:472
+msgid "(your username is the email you specify when purchasing the product)."
+msgstr "(ваше имя пользователя - это электронный адрес, указанный при покупке продукта)."
+
+#: google-plus-one.php:480
+#: google-plus-one.php:490
+msgid "Go!"
+msgstr "Перейти!"
+
+#: google-plus-one.php:483
+msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+msgstr "К сожалению, вы превысили количество доступных попыток в день. Пожалуйста, загрузите плагин вручную."
+
+#: google-plus-one.php:514
+msgid "requires"
+msgstr "требует"
+
+#: google-plus-one.php:514
+msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgstr "или выше, поэтому он был деактивирован! Пожалуйста обновите WordPress и попробуйте еще раз."
+
+#: google-plus-one.php:514
+msgid "Back to the WordPress"
+msgstr "Вернуться к WordPress на"
+
+#: google-plus-one.php:514
+msgid "Plugins page"
+msgstr "Страницу плагинов"
+
+#: google-plus-one.php:624
+msgid "FAQ"
+msgstr "FAQ"
+
+#: google-plus-one.php:625
+msgid "Support"
+msgstr "Поддержка"
+
+#: google-plus-one.php:688
 msgid "It's time to upgrade your <strong>Google +1</strong> to <strong>PRO</strong> version"
 msgstr "Пора обновить ваш <strong>плагин Google +1</strong> до <strong>PRO</strong> версии"
 
-#: google-plus-one.php:698
+#: google-plus-one.php:689
 msgid "Extend standard plugin functionality with new great options"
 msgstr "Расширение стандартного функционала плагина новыми опциями"
 
+#~ msgid ""
+#~ "This functionality is available in the Pro version of the plugin. For "
+#~ "more details, please follow the link"
+#~ msgstr ""
+#~ "Данный функционал доступен в Про версии плагина. Для более детальной "
+#~ "информации смотрите"

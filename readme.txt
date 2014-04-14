@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: Google +1, Google +1 Button, Like, Like button, Share, Share button, Google +1 like, Google +1 like button, Google +1 button like, Button like, Google +1 share, Google +1 share button, Google +1 button share
 Requires at least: 3.0
-Tested up to: 3.8.1
-Stable tag: 1.1.4
+Tested up to: 3.8.2
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,8 @@ Add Google +1 button to your WordPress website.
 == Description ==
 
 Google +1 allows you to celebrate liked the article. The button also provides a current count of how many times your story has been liked on Google Search Engine.
+
+http://www.youtube.com/watch?v=Z-v0xWTKnuU
 
 <a href="http://wordpress.org/plugins/google-one/faq/" target="_blank">FAQ</a>
 
@@ -79,7 +81,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: <a href="http://bestwebsoft.com/wp-content/uploads/manual/wp_plugin/general/System_Status.pdf" target="_blank">System_Status.pdf</a>
+4. copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit" target="_blank">Instuction on System Status</a>
 
 == Screenshots ==
 
@@ -88,6 +90,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 3. Google +1 Using shortcode in widget area.
 
 == Changelog ==
+
+= V1.1.5 - 14.04.2014 =
+* Update : We updated all functionality for wordpress 3.8.2.
 
 = V1.1.4 - 05.03.2014 =
 * Budfix : Plugin optimization is done.
@@ -118,6 +123,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.5 =
+We updated all functionality for wordpress 3.8.2.
 
 = V1.1.4 =
 Plugin optimization is done. Plugin tabs is added.

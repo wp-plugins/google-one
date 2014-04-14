@@ -4,13 +4,12 @@ Plugin Name: Google +1
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Add Google +1 button to your WordPress website.
 Author: BestWebSoft
-Version: 1.1.4
+Version: 1.1.5
 Author URI: http://bestwebsoft.com
 License: GPLv2 or later
 */
 
-/*	
-	@ Copyright 2014  BestWebSoft  ( http://support.bestwebsoft.com )
+/*	@ Copyright 2014  BestWebSoft  ( http://support.bestwebsoft.com )
 	
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
@@ -26,10 +25,49 @@ License: GPLv2 or later
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
-
 if ( ! function_exists( 'gglplsn_admin_menu' ) ) {
 	function gglplsn_admin_menu() {
+		global $bstwbsftwppdtplgns_options, $wpmu, $bstwbsftwppdtplgns_added_menu;
+		$bws_menu_version = '1.2.6';
+		$base = plugin_basename(__FILE__);
+
+		if ( ! isset( $bstwbsftwppdtplgns_options ) ) {
+			if ( 1 == $wpmu ) {
+				if ( ! get_site_option( 'bstwbsftwppdtplgns_options' ) )
+					add_site_option( 'bstwbsftwppdtplgns_options', array(), '', 'yes' );
+				$bstwbsftwppdtplgns_options = get_site_option( 'bstwbsftwppdtplgns_options' );
+			} else {
+				if ( ! get_option( 'bstwbsftwppdtplgns_options' ) )
+					add_option( 'bstwbsftwppdtplgns_options', array(), '', 'yes' );
+				$bstwbsftwppdtplgns_options = get_option( 'bstwbsftwppdtplgns_options' );
+			}
+		}
+
+		if ( isset( $bstwbsftwppdtplgns_options['bws_menu_version'] ) ) {
+			$bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] = $bws_menu_version;
+			unset( $bstwbsftwppdtplgns_options['bws_menu_version'] );
+			update_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options, '', 'yes' );
+			require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
+		} else if ( ! isset( $bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] ) || $bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] < $bws_menu_version ) {
+			$bstwbsftwppdtplgns_options['bws_menu']['version'][ $base ] = $bws_menu_version;
+			update_option( 'bstwbsftwppdtplgns_options', $bstwbsftwppdtplgns_options, '', 'yes' );
+			require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
+		} else if ( ! isset( $bstwbsftwppdtplgns_added_menu ) ) {
+			$plugin_with_newer_menu = $base;
+			foreach ( $bstwbsftwppdtplgns_options['bws_menu']['version'] as $key => $value ) {
+				if ( $bws_menu_version < $value && is_plugin_active( $base ) ) {
+					$plugin_with_newer_menu = $key;
+				}
+			}
+			$plugin_with_newer_menu = explode( '/', $plugin_with_newer_menu );
+			$wp_content_dir = defined( 'WP_CONTENT_DIR' ) ? basename( WP_CONTENT_DIR ) : 'wp-content';
+			if ( file_exists( ABSPATH . $wp_content_dir . '/plugins/' . $plugin_with_newer_menu[0] . '/bws_menu/bws_menu.php' ) )
+				require_once( ABSPATH . $wp_content_dir . '/plugins/' . $plugin_with_newer_menu[0] . '/bws_menu/bws_menu.php' );
+			else
+				require_once( dirname( __FILE__ ) . '/bws_menu/bws_menu.php' );
+			$bstwbsftwppdtplgns_added_menu = true;			
+		}
+
 		add_menu_page( 'BWS Plugins', 'BWS Plugins', 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( 'images/px.png', __FILE__ ), 1001 );
 		add_submenu_page( 'bws_plugins', __( 'Google +1 Settings', 'google_plus_one' ), __( 'Google +1', 'google_plus_one' ), 'manage_options', "google-plus-one.php", 'gglplsn_options' );
 	}
@@ -348,7 +386,6 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 							</tr>
 						</tbody>
 					</table>											
-					<input type="hidden" name="action" value="update" />
 					<input type="hidden" name="gglplsn_form_submit" value="1" />
 					<p class="submit">
 						<input type="submit" value="<?php _e( 'Save Changes', 'google_plus_one' ); ?>" class="button-primary" />
@@ -366,39 +403,51 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 					</div>
 				</div>
 			<?php } elseif ( 'extra' == $_GET['action'] ) { ?>
-				<table class="form-table bws_pro_version">
-					<tr valign="top">
-						<td colspan="2">
-							<?php _e( 'Please choose the necessary post types (or single pages) where Google +1 button will be displayed:', 'google_plus_one' ); ?>
-						</td>
-					</tr>
-					<tr valign="top">
-						<td colspan="2">
-							<label>
-								<input disabled="disabled" checked="checked" id="twttrpr_jstree_url" type="checkbox" name="twttrpr_jstree_url" value="1" />
-								<?php _e( "Show URL for pages", 'google_plus_one' );?>
-							</label>
-						</td>
-					</tr>
-					<tr valign="top">
-						<td colspan="2">
-							<img src="<?php echo plugins_url( 'images/pro_screen_1.png', __FILE__ ); ?>" alt="<?php _e( "Example of site pages' tree", 'google_plus_one' ); ?>" title="<?php _e( "Example of site pages' tree", 'google_plus_one' ); ?>" />
-						</td>
-					</tr>
-					<tr valign="top">
-						<td colspan="2">
-							<input disabled="disabled" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'google_plus_one' ); ?>" />
-						</td>
-					</tr>
-					<tr class="bws_pro_version_tooltip">
-						<th scope="row" colspan="2">
-							<?php _e( 'This functionality is available in the Pro version of the plugin. For more details, please follow the link', 'google_plus_one' ); ?> 
-							<a href="http://bestwebsoft.com/plugin/google-plus-one-pro/?k=0a5a8a70ed3c34b95587de0604ca9517&pn=102&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Google +1 Pro">
-								Google +1 Pro
-							</a>
-						</th>
-					</tr>					
-				</table>
+				<div class="bws_pro_version_bloc">
+					<div class="bws_pro_version_table_bloc">	
+						<div class="bws_table_bg"></div>											
+						<table class="form-table bws_pro_version">
+							<tr valign="top">
+								<td colspan="2">
+									<?php _e( 'Please choose the necessary post types (or single pages) where Google +1 button will be displayed:', 'google_plus_one' ); ?>
+								</td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">
+									<label>
+										<input disabled="disabled" checked="checked" id="twttrpr_jstree_url" type="checkbox" name="twttrpr_jstree_url" value="1" />
+										<?php _e( "Show URL for pages", 'google_plus_one' );?>
+									</label>
+								</td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">
+									<img src="<?php echo plugins_url( 'images/pro_screen_1.png', __FILE__ ); ?>" alt="<?php _e( "Example of site pages' tree", 'google_plus_one' ); ?>" title="<?php _e( "Example of site pages' tree", 'google_plus_one' ); ?>" />
+								</td>
+							</tr>
+							<tr valign="top">
+								<td colspan="2">
+									<input disabled="disabled" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'google_plus_one' ); ?>" />
+								</td>
+							</tr>
+							<tr valign="top">
+								<th scope="row" colspan="2">
+									* <?php _e( 'If you upgrade to Pro version all your settings will be saved.', 'google_plus_one' ); ?>
+								</th>
+							</tr>				
+						</table>	
+					</div>
+					<div class="bws_pro_version_tooltip">
+						<div class="bws_info">
+							<?php _e( 'Unlock premium options by upgrading to a PRO version.', 'google_plus_one' ); ?> 
+							<a href="http://bestwebsoft.com/plugin/google-plus-one-pro/?k=0a5a8a70ed3c34b95587de0604ca9517&pn=102&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Google +1 Pro"><?php _e( 'Learn More', 'google_plus_one' ); ?></a>				
+						</div>
+						<a class="bws_button" href="http://bestwebsoft.com/plugin/google-plus-one-pro/?k=0a5a8a70ed3c34b95587de0604ca9517&pn=102&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>#purchase" target="_blank" title="Google +1 Pro">
+							<?php _e( 'Go', 'google_plus_one' ); ?> <strong>PRO</strong>
+						</a>	
+						<div class="clear"></div>					
+					</div>
+				</div>
 			<?php } elseif ( 'go_pro' == $_GET['action'] ) { ?>
 				<?php if ( isset( $pro_plugin_is_activated ) && true === $pro_plugin_is_activated ) { ?>
 					<script type="text/javascript">
@@ -470,15 +519,10 @@ if ( ! function_exists ( 'gglplsn_version_check' ) ) {
 
 if ( ! function_exists( 'gglplsn_admin_head' ) ) {
 	function gglplsn_admin_head() {
-		/* Style for admin page */
-		global $wp_version;
-		if ( $wp_version < 3.8 )
-			wp_enqueue_style( 'gglplsn_style', plugins_url( 'css/style_wp_before_3.8.css', __FILE__ ) );	
-		else
+		if ( isset( $_GET['page'] ) && "google-plus-one.php" == $_GET['page'] ) {
 			wp_enqueue_style( 'gglplsn_style', plugins_url( 'css/style.css', __FILE__ ) );
-
-		if ( isset( $_GET['page'] ) && "google-plus-one.php" == $_GET['page'] )
 			wp_enqueue_script( 'gglplsn_script', plugins_url( 'js/script.js', __FILE__ ) );
+		}
 	}
 }
 
@@ -590,7 +634,8 @@ if ( ! function_exists ( 'gglplsn_plugin_banner' ) ) {
 		if ( 'plugins.php' == $hook_suffix ) {   
 			$banner_array = array(
 				array( 'pdtr_hide_banner_on_plugin_page', 'updater/updater.php', '1.12' ),
-				array( 'cntctfrmtdb_hide_banner_on_plugin_page', 'contact-form-to-db/contact_form_to_db.php', '1.2' ),
+				array( 'cntctfrmtdb_hide_banner_on_plugin_page', 'contact-form-to-db/contact_form_to_db.php', '1.2' ),		
+				array( 'gglmps_hide_banner_on_plugin_page', 'bws-google-maps/bws-google-maps.php', '1.2' ),		
 				array( 'fcbkbttn_hide_banner_on_plugin_page', 'facebook-button-plugin/facebook-button-plugin.php', '2.29' ),
 				array( 'twttr_hide_banner_on_plugin_page', 'twitter-plugin/twitter.php', '2.34' ),
 				array( 'pdfprnt_hide_banner_on_plugin_page', 'pdf-print/pdf-print.php', '1.7.1' ),
@@ -612,14 +657,19 @@ if ( ! function_exists ( 'gglplsn_plugin_banner' ) ) {
 			$this_banner = 'gglplsn_hide_banner_on_plugin_page';
 			foreach ( $banner_array as $key => $value ) {
 				if ( $this_banner == $value[0] ) {
-					global $wp_version;
-		       		echo '<script type="text/javascript" src="' . plugins_url( 'js/c_o_o_k_i_e.js', __FILE__ ) . '"></script>
+					global $wp_version, $bstwbsftwppdtplgns_cookie_add;
+		       		if ( ! isset( $bstwbsftwppdtplgns_cookie_add ) ) {
+						echo '<script type="text/javascript" src="' . plugins_url( 'js/c_o_o_k_i_e.js', __FILE__ ) . '"></script>';
+						$bstwbsftwppdtplgns_cookie_add = true;
+					} ?>
 					<script type="text/javascript">		
 						(function($) {
 							$(document).ready( function() {		
 								var hide_message = $.cookie( "gglplsn_hide_banner_on_plugin_page" );
 								if ( hide_message == "true") {
 									$( ".gglplsn_message" ).css( "display", "none" );
+								} else {
+									$( ".gglplsn_message" ).css( "display", "block" );
 								};
 								$( ".gglplsn_close_icon" ).click( function() {
 									$( ".gglplsn_message" ).css( "display", "none" );
@@ -629,17 +679,21 @@ if ( ! function_exists ( 'gglplsn_plugin_banner' ) ) {
 						})(jQuery);				
 					</script>
 					<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">					                      
-						<div class="gglplsn_message bws_banner_on_plugin_page">
-							<img class="gglplsn_close_icon close_icon" title="" src="' . plugins_url( 'images/close_banner.png', __FILE__ ) . '" alt=""/>
-							<a class="button" target="_blank" href="http://bestwebsoft.com/plugin/google-one-pro/?k=ca01bbe0edd696fddb27769001fe8084&pn=102&v=' . $gglplsn_plugin_info["Version"] . '&wp_v=' . $wp_version . '">' . __( "Learn More", 'google_plus_one' ) . '</a>				
+						<div class="gglplsn_message bws_banner_on_plugin_page" style="display: none;">
+							<img class="gglplsn_close_icon close_icon" title="" src="<?php echo plugins_url( 'images/close_banner.png', __FILE__ ); ?>" alt=""/>
+							<div class="button_div">
+								<a class="button" target="_blank" href="http://bestwebsoft.com/plugin/google-one-pro/?k=ca01bbe0edd696fddb27769001fe8084&pn=102&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( "Learn More", 'google_plus_one' ); ?></a>				
+							</div>
 							<div class="text">
-								' . __( "It's time to upgrade your <strong>Google +1</strong> to <strong>PRO</strong> version", 'google_plus_one' ) . '!<br />
-								<span>' . __( 'Extend standard plugin functionality with new great options', 'google_plus_one' ) . '.</span>
+								<?php _e( "It's time to upgrade your <strong>Google +1</strong> to <strong>PRO</strong> version", 'google_plus_one' ); ?>!<br />
+								<span><?php _e( 'Extend standard plugin functionality with new great options', 'google_plus_one' ); ?>.</span>
 							</div> 					
-							<img class="icon" title="" src="' . plugins_url( 'images/banner.png', __FILE__ ) . '" alt=""/>	
+							<div class="icon">
+								<img title="" src="<?php echo plugins_url( 'images/banner.png', __FILE__ ); ?>" alt=""/>	
+							</div>
 						</div>  
-					</div>';
-					break;
+					</div>
+					<?php break;
 				}
 				if ( isset( $all_plugins[ $value[1] ] ) && $all_plugins[ $value[1] ]["Version"] >= $value[2] && ( 0 < count( preg_grep( '/' . str_replace( '/', '\/', $value[1] ) . '/', $active_plugins ) ) || is_plugin_active_for_network( $value[1] ) ) && ! isset( $_COOKIE[ $value[0] ] ) ) {
 					break;
