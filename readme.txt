@@ -92,7 +92,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 == Changelog ==
 
 = V1.1.6 - 15.05.2014 =
-* Update : BWS plugins section is updated.
+* Update : BWS plugins section is updated. 
 * Update : We updated all functionality for wordpress 3.9.1.
 * Update : The Ukrainian language is updated in the plugin.
 
