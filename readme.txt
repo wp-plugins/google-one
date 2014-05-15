@@ -1,10 +1,10 @@
 ﻿=== Google +1 ===
 Contributors: bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: Google +1, Google +1 Button, Like, Like button, Share, Share button, Google +1 like, Google +1 like button, Google +1 button like, Button like, Google +1 share, Google +1 share button, Google +1 button share
+Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
+Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
-Tested up to: 3.8.2
-Stable tag: 1.1.5
+Tested up to: 3.9.1
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.1.6 - 15.05.2014 =
+* Update : BWS plugins section is updated.
+* Update : We updated all functionality for wordpress 3.9.1.
+* Update : The Ukrainian language is updated in the plugin.
+
 = V1.1.5 - 14.04.2014 =
 * Update : We updated all functionality for wordpress 3.8.2.
 
@@ -123,6 +128,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.6 =
+BWS plugins section is updated. We updated all functionality for wordpress 3.9.1. The Ukrainian language is updated in the plugin.
 
 = V1.1.5 =
 We updated all functionality for wordpress 3.8.2.
