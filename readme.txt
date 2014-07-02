@@ -12,7 +12,7 @@ Add Google +1 button to your WordPress website.
 
 == Description ==
 
-Google +1 allows you to celebrate liked the article. The button also provides a current count of how many times your story has been liked on Google Search Engine.
+Google +1 allows you to see how many times your page has been liked on Google Search Engine as well as who has liked the article. It comes with the button which provides a count. Google +1 plugin is a perfect solution for the people interested in the promotion of their website. 
 
 http://www.youtube.com/watch?v=Z-v0xWTKnuU
 
