@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
-Tested up to: 3.9.1
-Stable tag: 1.1.6
+Tested up to: 4.0-beta3
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Add Google +1 button to your WordPress website.
 
 == Description ==
 
-Google +1 allows you to see how many times your page has been liked on Google Search Engine as well as who has liked the article. It comes with the button which provides a count. Google +1 plugin is a perfect solution for the people interested in the promotion of their website. 
+Google +1 allows you to see how many times your page has been liked on Google Search Engine as well as who has liked the article. It comes with the button which provides a count. Google +1 plugin is a perfect solution for the people interested in the promotion of their website.
 
 http://www.youtube.com/watch?v=Z-v0xWTKnuU
 
@@ -91,6 +91,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.1.7 - 07.08.2014 =
+* Bugfix : Security Exploit was fixed.
+
 = V1.1.6 - 15.05.2014 =
 * Update : BWS plugins section is updated. 
 * Update : We updated all functionality for wordpress 3.9.1.
@@ -128,6 +131,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.7 =
+Security Exploit was fixed.
 
 = V1.1.6 =
 BWS plugins section is updated. We updated all functionality for wordpress 3.9.1. The Ukrainian language is updated in the plugin.
