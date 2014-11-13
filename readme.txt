@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&
 Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.1.7
+Stable tag: 1.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,7 +20,7 @@ http://www.youtube.com/watch?v=Z-v0xWTKnuU
 
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
-<a href="http://bestwebsoft.com/plugin/google-one-pro/?k=ecb8dc3b466b95504db546e515600a5e" target="_blank">Upgrade to Pro Version</a>
+<a href="http://bestwebsoft.com/products/google-plus-one/?k=ecb8dc3b466b95504db546e515600a5e" target="_blank">Upgrade to Pro Version</a>
 
 = Features =
 
@@ -33,7 +33,7 @@ http://www.youtube.com/watch?v=Z-v0xWTKnuU
 The author of the Google +1 also recommends the following plugins:
 
 * <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=a0ca69e53accff1fea97aebbccd33d33">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/updater/?k=a0ca69e53accff1fea97aebbccd33d33">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 
 = Translation =
 
@@ -91,6 +91,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.1.8 - 13.11.2014 =
+* Bugfix : Plugin optimization is done.
+* Update : BWS plugins section is updated.
+
 = V1.1.7 - 07.08.2014 =
 * Bugfix : Security Exploit was fixed.
 
@@ -103,7 +107,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 3.8.2.
 
 = V1.1.4 - 05.03.2014 =
-* Budfix : Plugin optimization is done.
+* Bugfix : Plugin optimization is done.
 * Update : Plugin tabs is added.
 
 = V1.1.3 - 12.02.2014 =
@@ -131,6 +135,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.1.8 =
+Plugin optimization is done. BWS plugins section is updated.
 
 = V1.1.7 =
 Security Exploit was fixed.
