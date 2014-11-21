@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Google +1
+Plugin Name: Google +1 by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Google +1 button to your WordPress website.
 Author: BestWebSoft
