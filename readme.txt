@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
 Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 1.2.0
+Tested up to: 4.2-RC3
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,8 @@ Add Google +1 button to your WordPress website.
 Google +1 allows you to see how many times your page has been liked on Google Search Engine as well as who has liked the article. It comes with the button which provides a count. Google +1 plugin is a perfect solution for the people interested in the promotion of their website.
 
 http://www.youtube.com/watch?v=Z-v0xWTKnuU
+
+<a href="http://www.youtube.com/watch?v=9G640UQeJFE" target="_blank">Video instruction on Installation</a>
 
 <a href="http://wordpress.org/plugins/google-one/faq/" target="_blank">FAQ</a>
 
@@ -57,6 +59,10 @@ We can fix some things for free for the users who provide translation of our plu
 3. You can adjust necessary settings through your WordPress admin panel in "Settings" > "Google +1".
 4. Create a page or a post and insert shortcode [bws_googleplusone] to the text.
 
+<a href="https://docs.google.com/document/d/1Vfxwe8PvzMQfhkqVZ-bKP8JNY92c6m9Tl4-edBUZpOA/edit" target="_blank">View a Step-by-step Instruction on Google +1 Installation</a>.
+
+http://www.youtube.com/watch?v=9G640UQeJFE
+
 == Frequently Asked Questions ==
 
 = Why does the button become red after clicking? =
@@ -90,6 +96,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 3. Google +1 Using shortcode in widget area.
 
 == Changelog ==
+
+= V1.2.1 - 23.04.2015 =
+* Bugfix : Plugin optimization is done.
 
 = V1.2.0 - 18.02.2015 =
 * Bugfix : Validation of attribute href on element div error was fixed.
@@ -141,6 +150,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.2.1 =
+Plugin optimization is done.
 
 = V1.2.0 =
 Validation of attribute href on element div error was fixed.
