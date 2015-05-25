@@ -4,7 +4,7 @@ Plugin Name: Google +1 by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Google +1 button to your WordPress website.
 Author: BestWebSoft
-Version: 1.2.1
+Version: 1.2.2
 Author URI: http://bestwebsoft.com
 License: GPLv2 or later
 */
@@ -413,7 +413,7 @@ if ( ! function_exists ( 'gglplsn_plugin_banner' ) ) {
 		global $hook_suffix;
 		if ( 'plugins.php' == $hook_suffix ) {
 			global $gglplsn_plugin_info;
-			bws_plugin_banner( $gglplsn_plugin_info, 'gglplsn', 'google-plus-one', 'ca01bbe0edd696fddb27769001fe8084', '102', 'http://ps.w.org/google-one/assets/icon-128x128.png' );
+			bws_plugin_banner( $gglplsn_plugin_info, 'gglplsn', 'google-plus-one', 'ca01bbe0edd696fddb27769001fe8084', '102', '//ps.w.org/google-one/assets/icon-128x128.png' );
 		}
 	}
 }

@@ -1,10 +1,10 @@
 ﻿=== Google +1 by BestWebSoft ===
 Contributors: bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
+Donate link: http://bestwebsoft.com/donate/
 Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
-Tested up to: 4.2.1
-Stable tag: 1.2.1
+Tested up to: 4.2.2
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,6 +84,7 @@ Just paste code [bws_googleplusone] into the necessary page, post or text widget
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
@@ -96,6 +97,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 3. Google +1 Using shortcode in widget area.
 
 == Changelog ==
+
+= V1.2.2 - 25.05.2015 =
+* Update : We updated all functionality for wordpress 4.2.2.
 
 = V1.2.1 - 23.04.2015 =
 * Bugfix : Plugin optimization is done.
@@ -150,6 +154,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.2.2 =
+We updated all functionality for wordpress 4.2.2.
 
 = V1.2.1 =
 Plugin optimization is done.
