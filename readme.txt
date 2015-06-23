@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.2.3 - 23.06.2015 =
+* NEW : Ability to restore settings to defaults.
+
 = V1.2.2 - 25.05.2015 =
 * Update : We updated all functionality for wordpress 4.2.2.
 
@@ -154,6 +157,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.2.3 =
+Ability to restore settings to defaults.
 
 = V1.2.2 =
 We updated all functionality for wordpress 4.2.2.
