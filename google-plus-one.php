@@ -4,7 +4,7 @@ Plugin Name: Google +1 by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Google +1 button to your WordPress website.
 Author: BestWebSoft
-Version: 1.2.3
+Version: 1.2.4
 Author URI: http://bestwebsoft.com
 License: GPLv2 or later
 */
@@ -36,7 +36,7 @@ if ( ! function_exists( 'gglplsn_admin_menu' ) ) {
 
 if ( ! function_exists ( 'gglplsn_init' ) ) {
 	function gglplsn_init() {
-		global $gglplsn_plugin_info;
+		global $gglplsn_plugin_info, $gglplsn_lang_codes;
 		/* Internationalization */
 		load_plugin_textdomain( 'google_plus_one', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
@@ -49,11 +49,15 @@ if ( ! function_exists ( 'gglplsn_init' ) ) {
 		/*## add general functions */
 		require_once( dirname( __FILE__ ) . '/bws_menu/bws_functions.php' );
 		
-		bws_wp_version_check( plugin_basename( __FILE__ ), $gglplsn_plugin_info, "3.0" ); /* check compatible with current WP version ##*/
+		bws_wp_version_check( plugin_basename( __FILE__ ), $gglplsn_plugin_info, '3.0' ); /* check compatible with current WP version ##*/
 
 		/* Get/Register and check settings for plugin */
-		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "google-plus-one.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) )
+		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "google-plus-one.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) ) {
 			gglplsn_settings();
+			$gglplsn_lang_codes = array(
+				"af_ZA" => 'Afrikaans', "ar_AR" => 'العربية', "ay_BO" => 'Aymar aru', "az_AZ" => 'Azərbaycan dili', "be_BY" => 'Беларуская', "bg_BG" => 'Български', "bn_IN" => 'বাংলা', "bs_BA" => 'Bosanski', "ca_ES" => 'Català', "ck_US" => 'Cherokee', "cs_CZ" => 'Čeština', "cy_GB" => 'Cymraeg', "da_DK" => 'Dansk', "de_DE" => 'Deutsch', "el_GR" => 'Ελληνικά', "en_US" => 'English', "en_PI" => 'English (Pirate)', "eo_EO" => 'Esperanto', "es_CL" => 'Español (Chile)', "es_CO" => 'Español (Colombia)', "es_ES" => 'Español (España)', "es_LA" => 'Español', "es_MX" => 'Español (México)', "es_VE" => 'Español (Venezuela)', "et_EE" => 'Eesti', "eu_ES" => 'Euskara', "fa_IR" => 'فارسی', "fb_LT" => 'Leet Speak', "fi_FI" => 'Suomi', "fo_FO" => 'Føroyskt', "fr_CA" => 'Français (Canada)', "fr_FR" => 'Français (France)', "fy_NL" => 'Frysk', "ga_IE" => 'Gaeilge', "gl_ES" => 'Galego', "gn_PY" => "Avañe'ẽ", "gu_IN" => 'ગુજરાતી', "gx_GR" => 'Ἑλληνική ἀρχαία', "he_IL" => 'עברית', "hi_IN" => 'हिन्दी', "hr_HR" => 'Hrvatski', "hu_HU" => 'Magyar', "hy_AM" => 'Հայերեն', "id_ID" => 'Bahasa Indonesia', "is_IS" => 'Íslenska', "it_IT" => 'Italiano', "ja_JP" => '日本語', "jv_ID" => 'Basa Jawa', "ka_GE" => 'ქართული', "kk_KZ" => 'Қазақша', "km_KH" => 'ភាសាខ្មែរ', "kn_IN" => 'ಕನ್ನಡ', "ko_KR" => '한국어', "ku_TR" => 'Kurdî', "la_VA" => 'lingua latina', "li_NL" => 'Limburgs', "lt_LT" => 'Lietuvių', "lv_LV" => 'Latviešu', "mg_MG" => 'Malagasy', "mk_MK" => 'Македонски', "ml_IN" => 'മലയാളം', "mn_MN" => 'Монгол', "mr_IN" => 'मराठी', "ms_MY" => 'Bahasa Melayu', "mt_MT" => 'Malti', "nb_NO" => 'Norsk (bokmål)', "ne_NP" => 'नेपाली', "nl_BE" => 'Nederlands (België)', "nl_NL" => 'Nederlands', "nn_NO" => 'Norsk (nynorsk)', "pa_IN" => 'ਪੰਜਾਬੀ', "pl_PL" => 'Polski', "ps_AF" => 'پښتو', "pt_BR" => 'Português (Brasil)', "pt_PT" => 'Português (Portugal)', "qu_PE" => 'Qhichwa', "rm_CH" => 'Rumantsch', "ro_RO" => 'Română', "ru_RU" => 'Русский', "sa_IN" => 'संस्कृतम्', "se_NO" => 'Davvisámegiella', "sk_SK" => 'Slovenčina', "sl_SI" => 'Slovenščina', "so_SO" => 'Soomaaliga', "sq_AL" => 'Shqip', "sr_RS" => 'Српски', "sv_SE" => 'Svenska', "sw_KE" => 'Kiswahili', "sy_SY" => 'ܐܪܡܝܐ', "ta_IN" => 'தமிழ்', "te_IN" => 'తెలుగు', "tg_TJ" => 'тоҷикӣ', "th_TH" => 'ภาษาไทย', "tl_PH" => 'Filipino', "tl_ST" => 'tlhIngan-Hol', "tr_TR" => 'Türkçe', "tt_RU" => 'Татарча', "uk_UA" => 'Українська', "ur_PK" => 'اردو', "uz_UZ" => "O'zbek", "vi_VN" => 'Tiếng Việt', "yi_DE" => 'ייִדיש', "zh_CN" => '中文(简体)', "zh_HK" => '中文(香港)', "zh_TW" => '中文(台灣)', "zu_ZA" => 'isiZulu'
+			);
+		}
 	}
 }
 
@@ -73,16 +77,17 @@ if ( ! function_exists ( 'gglplsn_settings' ) ) {
 		global $gglplsn_options, $gglplsn_plugin_info, $gglplsn_option_defaults;
 
 		/* Default options */
-		$gglplsn_option_defaults	=	array(
-			'plugin_option_version' => $gglplsn_plugin_info["Version"],
-			'js'					=>	'1',
-			'annotation'			=>	'0',
-			'size'					=>	'standart',
-			'position'				=>	'before_post',
-			'lang'					=>	'en-GB',
-			'posts'					=>	'1',
-			'pages'					=>	'1',
-			'homepage'				=>	'1'
+		$gglplsn_option_defaults		=	array(
+			'plugin_option_version'		=>	$gglplsn_plugin_info["Version"],
+			'js'						=>	'1',
+			'annotation'				=>	'0',
+			'size'						=>	'standard',
+			'position'					=>	'before_post',
+			'lang'						=>	'en_US',
+			'posts'						=>	'1',
+			'pages'						=>	'1',
+			'homepage'					=>	'1',
+			'use_multilanguage_locale'	=>	0
 		);
 
 		if ( ! get_option( 'gglplsn_options' ) )
@@ -101,26 +106,30 @@ if ( ! function_exists ( 'gglplsn_settings' ) ) {
 /* Add settings page in admin area */
 if ( ! function_exists( 'gglplsn_options' ) ) {
 	function gglplsn_options() {
-		global $gglplsn_options, $wp_version, $gglplsn_plugin_info, $gglplsn_option_defaults;
+		global $gglplsn_options, $wp_version, $gglplsn_plugin_info, $gglplsn_option_defaults, $gglplsn_lang_codes;
 		$message = $error = "";
 		$plugin_basename = plugin_basename( __FILE__ );
 
+		if ( ! function_exists( 'get_plugins' ) || ! function_exists( 'is_plugin_active' ) )
+			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+		if ( ! isset( $_GET['action'] ) )
+			$all_plugins = get_plugins();
+
 		/* Save data for settings page */
 		if ( isset( $_REQUEST['gglplsn_form_submit'] ) && check_admin_referer( $plugin_basename, 'gglplsn_nonce_name' ) ) {
-			$gglplsn_options['js']			=	isset( $_REQUEST['gglplsn_js'] ) ? 1 : 0 ;
-			$gglplsn_options['annotation']	=	isset( $_REQUEST['gglplsn_annotation'] ) ? 1 : 0 ;
-			$gglplsn_options['size']		=	$_REQUEST['gglplsn_size'];
-			$gglplsn_options['position']	=	$_REQUEST['gglplsn_position'];
-			$gglplsn_options['lang']		=	$_REQUEST['gglplsn_lang'];
-			$gglplsn_options['posts']		=	isset( $_REQUEST['gglplsn_posts'] ) ? 1 : 0 ;
-			$gglplsn_options['pages']		=	isset( $_REQUEST['gglplsn_pages'] ) ? 1 : 0 ;
-			$gglplsn_options['homepage']	=	isset( $_REQUEST['gglplsn_homepage'] ) ? 1 : 0 ;
+			$gglplsn_options['js']							=	isset( $_REQUEST['gglplsn_js'] ) ? 1 : 0 ;
+			$gglplsn_options['annotation']					=	isset( $_REQUEST['gglplsn_annotation'] ) ? 1 : 0 ;
+			$gglplsn_options['size']						=	$_REQUEST['gglplsn_size'];
+			$gglplsn_options['position']					=	$_REQUEST['gglplsn_position'];
+			$gglplsn_options['lang']						=	$_REQUEST['gglplsn_lang'];
+			$gglplsn_options['posts']						=	isset( $_REQUEST['gglplsn_posts'] ) ? 1 : 0 ;
+			$gglplsn_options['pages']						=	isset( $_REQUEST['gglplsn_pages'] ) ? 1 : 0 ;
+			$gglplsn_options['homepage']					=	isset( $_REQUEST['gglplsn_homepage'] ) ? 1 : 0 ;
+			$gglplsn_options['use_multilanguage_locale']	=	isset( $_REQUEST['gglplsn_use_multilanguage_locale'] ) ? 1 : 0;
 			$message = __( 'Settings saved', 'google_plus_one' );
 			update_option( 'gglplsn_options', $gglplsn_options );
-		}
-		$lang_codes = array(
-			'af' => "Afrikaans", 'am' => "Amharic", 'ar' => "Arabic", 'eu' => "Basque", 'bn' => "Bengali", 'bg' => "Bulgarian", 'ca' => "Catalan", 'zh-HK' => "Chinese (Hong Kong)", 'zn-CH' => "Chinese (Simplified)", 'zh-TW' => "Chinese (Traditional)", 'hr' => "Croatian", 'cs' => "Czech", 'da' => "Danish", 'nl' => "Dutch", 'en-GB' => "English (UK)", 'en-US' => "English (US)", 'et' => "Estonian", 'fil' => "Filipino", 'fi' => "Finnish", 'fr' => "French", 'fr-CA' => "French (Canadian)", 'gl' => "Galician", 'de' => "German", 'el' => "Greek", 'gu' => "Gujarati", 'iw' => "Hebrew", 'hi' => "Hindi", 'hu' => "Hungarian", 'is' => "Icelandic", 'id' => "Indonesian", 'it' => "Italian", 'ja' => "Japanese", 'kn' => "Kannada", 'ko' => "Korean", 'lv' => "Latvian", 'lt' => "Lithuanian", 'ms' => "Malay", 'ml' => "Malayalam", 'mr' => "Marathi", 'no' => "Norwegian", 'fa' => "Persian", 'pl' => "Polish", 'pt-BR' => "Portuguese (Brazil)", 'pt-PT' => "Portuguese (Portugal)", 'ro' => "Romanian", 'ru' => "Russian", 'sr' => "Serbian", 'sk' => "Slovak", 'sl' => "Slovenian", 'es' => "Spanish", 'es-419' => "Spanish (Latin America)", 'sw' => "Swahili", 'sv' => "Swedish", 'ta' => "Tamil", 'te' => "Telugu", 'th' => "Thai", 'tr' => "Turkish", 'uk' => "Ukrainian", 'ur' => "Urdu", 'vi' => "Vietnamese", 'zu' => "Zulu"
-		);
+		}		
 
 		/*## Add restore function */
 		if ( isset( $_REQUEST['bws_restore_confirm'] ) && check_admin_referer( $plugin_basename, 'bws_settings_nonce_name' ) ) {
@@ -181,7 +190,7 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 									<th scope="row"><?php _e( 'Button Size', 'google_plus_one' ); ?></th>
 									<td class="gglplsn_no_padding">
 										<select name="gglplsn_size">
-											<option value="standart" <?php if ( 'standart' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Standart', 'google_plus_one' ); ?></option>
+											<option value="standard" <?php if ( 'standard' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Standard', 'google_plus_one' ); ?></option>
 											<option value="small" <?php if ( 'small' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Small', 'google_plus_one' ); ?></option>
 											<option value="medium" <?php if ( 'medium' == $gglplsn_options['size'] ) echo 'selected="selected"';?>><?php _e( 'Medium', 'google_plus_one' ); ?></option>
 											<option value="tall" <?php if ( 'tall' == $gglplsn_options['size'] ) echo 'selected="selected"';?>><?php _e( 'Tall', 'google_plus_one' ); ?></option>
@@ -203,15 +212,33 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 								<tr>
 									<th scope="row"><?php _e( 'Language', 'google_plus_one' ); ?></th>
 									<td class="gglplsn_no_padding">
-										<select name="gglplsn_lang">
-											<?php foreach ( $lang_codes as $key => $val ) {
-												echo '<option value="' . $key . '"';
-												if ( $key == $gglplsn_options['lang'] )
-													echo ' selected="selected"';
-												echo '>' . esc_html ( $val ) . '</option>';
-											} ?>
-										</select>
-										<span class="gglplsn_info">(<?php _e( 'Select the language to display information on the button', 'google_plus_one' ); ?>)</span>
+										<fieldset>
+											<select name="gglplsn_lang">
+												<?php foreach ( $gglplsn_lang_codes as $key => $val ) {
+													echo '<option value="' . $key . '"';
+													if ( $key == $gglplsn_options['lang'] )
+														echo ' selected="selected"';
+													echo '>' . esc_html ( $val ) . '</option>';
+												} ?>
+											</select>
+											<span class="gglplsn_info">(<?php _e( 'Select the language to display information on the button', 'google_plus_one' ); ?>)</span><br />
+											<label>
+												<?php if ( array_key_exists( 'multilanguage/multilanguage.php', $all_plugins ) || array_key_exists( 'multilanguage-pro/multilanguage-pro.php', $all_plugins ) ) {
+													if ( is_plugin_active( 'multilanguage/multilanguage.php' ) || is_plugin_active( 'multilanguage-pro/multilanguage-pro.php' ) ) { ?>
+														<input type="checkbox" name="gglplsn_use_multilanguage_locale" value="1" <?php if ( 1 == $gglplsn_options["use_multilanguage_locale"] ) echo 'checked="checked"'; ?> /> 
+														<?php _e( 'Use the current site language', 'google_plus_one' ); ?> <span class="bws_info">(<?php _e( 'Using', 'google_plus_one' ); ?> Multilanguage by BestWebSoft)</span>
+													<?php } else { ?>
+														<input disabled="disabled" type="checkbox" name="gglplsn_use_multilanguage_locale" value="1" /> 
+														<?php _e( 'Use the current site language', 'google_plus_one' ); ?> 
+														<span class="bws_info">(<?php _e( 'Using', 'google_plus_one' ); ?> Multilanguage by BestWebSoft) <a href="<?php echo bloginfo("url"); ?>/wp-admin/plugins.php"><?php _e( 'Activate', 'google_plus_one' ); ?> Multilanguage</a></span>
+													<?php }
+												} else { ?>
+													<input disabled="disabled" type="checkbox" name="gglplsn_use_multilanguage_locale" value="1" /> 
+													<?php _e( 'Use the current site language', 'google_plus_one' ); ?> 
+													<span class="bws_info">(<?php _e( 'Using', 'google_plus_one' ); ?> Multilanguage by BestWebSoft) <a href="http://bestwebsoft.com/products/multilanguage/?k=196fb3bb74b6e8b1e08f92cddfd54313&pn=78&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'google_plus_one' ); ?> Multilanguage</a></span>
+												<?php } ?>
+										</label>
+										</fieldset>
 									</td>
 								</tr>
 								<tr>
@@ -318,11 +345,32 @@ if ( ! function_exists( 'gglplsn_admin_head' ) ) {
 
 if ( ! function_exists( 'gglplsn_js' ) ) {
 	function gglplsn_js() {
-		global $gglplsn_options;
-		if ( '1' == $gglplsn_options['js'] ) { ?>
+		global $gglplsn_options, $gglplsn_lang_codes;		
+		if ( '1' == $gglplsn_options['js'] ) {			
+			if ( 1 == $gglplsn_options['use_multilanguage_locale'] && isset( $_SESSION['language'] ) ) {
+				if ( array_key_exists( $_SESSION['language'], $gglplsn_lang_codes ) ) {
+					$gglplsn_locale = $_SESSION['language'];
+				} else {
+					global $mltlngg_languages, $mltlnggpr_languages;
+					if ( ! empty( $mltlngg_languages ) || ! empty( $mltlnggpr_languages ) ) {
+						$languages_list = ! empty( $mltlngg_languages ) ? $mltlngg_languages : $mltlnggpr_languages;
+						foreach ( $languages_list as $key => $one_lang ) {
+							$mltlngg_lang_key = array_search( $_SESSION['language'], $one_lang );
+							if ( false !== $mltlngg_lang_key ) {
+								$gglplsn_lang_key = array_search( $one_lang[2], $gglplsn_lang_codes );
+								if ( false != $gglplsn_lang_key )
+									$gglplsn_locale = $gglplsn_lang_key;
+								break;
+							}
+						}
+					}
+				}
+			}
+			if ( empty( $gglplsn_locale ) )
+				$gglplsn_locale = $gglplsn_options['lang']; ?>
 			<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-				<?php if ( 'en-US' != $gglplsn_options['lang'] ) { ?>
-					{'lang': '<?php echo $gglplsn_options['lang']; ?>'}
+				<?php if ( 'en-US' != $gglplsn_locale ) { ?>
+					{'lang': '<?php echo $gglplsn_locale; ?>'}
 				<?php } ?>
 			</script>
 		<?php }

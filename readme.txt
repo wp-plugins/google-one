@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,7 @@ http://www.youtube.com/watch?v=Z-v0xWTKnuU
 * Actions: Add Google +1 button easily.
 * Display: Select the button position: before the content, after, before and after or using a shortcode.
 * Display: Use one of 4 Sizes of button.
+* Display: Ability to use the current site language for Google +1 button (Using Multilanguage by BestWebSoft)
 
 = Recommended Plugins =
 
@@ -71,11 +72,11 @@ For correct work of the Google +1 buttons do not use it locally and on a free ho
 
 = How can I deactivate the plugin? =
 
-In WordPress admin panel go to "Plugins", find the Google +1 and click "Deactivate".
+In WordPress admin panel, please go to "BWS Plugins", find the Google +1 and click "Deactivate".
 
 = How to adjust Google +1 Button position on the page =
 
-In WordPress admin panel go to "Settings", find the Google +1 settings page and choose one of the listed positions: Before, After, Before and After. Then click "Save Changes".
+In WordPress admin panel, please go to "BWS Plugins", find the Google +1 settings page and choose one of the listed positions: Before, After, Before and After. Then click "Save Changes".
 
 = How to add Google +1 Button with shortcode =
 
@@ -97,6 +98,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 3. Google +1 Using shortcode in widget area.
 
 == Changelog ==
+
+= V1.2.4 - 23.07.2015 =
+* NEW : Ability to use the current site language for Google +1 button (Using Multilanguage by BestWebSoft).
 
 = V1.2.3 - 23.06.2015 =
 * NEW : Ability to restore settings to defaults.
@@ -157,6 +161,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.2.4 =
+Ability to use the current site language for Google +1 button (Using Multilanguage by BestWebSoft).
 
 = V1.2.3 =
 Ability to restore settings to defaults.

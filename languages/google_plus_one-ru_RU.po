@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google +1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-23 11:59+0300\n"
-"PO-Revision-Date: 2015-06-23 11:59+0300\n"
-"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"POT-Creation-Date: 2015-07-22 21:39+0300\n"
+"PO-Revision-Date: 2015-07-22 21:39+0300\n"
+"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -16,176 +16,202 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:32
-#: google-plus-one.php:142
+#: google-plus-one.php:32 google-plus-one.php:151
 msgid "Google +1 Settings"
 msgstr "Google +1 Настройки"
 
-#: google-plus-one.php:118
+#: google-plus-one.php:130
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: google-plus-one.php:129
+#: google-plus-one.php:138
 msgid "All plugin settings were restored."
 msgstr "Все настройки плагина восстановлены."
 
-#: google-plus-one.php:144
-#: google-plus-one.php:403
-#: google-plus-one.php:416
+#: google-plus-one.php:153 google-plus-one.php:451 google-plus-one.php:464
 msgid "Settings"
 msgstr "Настройки"
 
-#: google-plus-one.php:145
+#: google-plus-one.php:154
 msgid "Extra settings"
 msgstr "Дополнительные настройки"
 
-#: google-plus-one.php:146
-#: google-plus-one.php:417
+#: google-plus-one.php:155 google-plus-one.php:465
 msgid "FAQ"
 msgstr "FAQ"
 
-#: google-plus-one.php:147
+#: google-plus-one.php:156
 msgid "Go PRO"
 msgstr "Перейти на PRO версию"
 
-#: google-plus-one.php:151
+#: google-plus-one.php:160
 msgid "Notice:"
 msgstr "Внимание:"
 
-#: google-plus-one.php:151
-msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
-msgstr "Настройки плагина были изменены. Для того, чтобы сохранить их, пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
+#: google-plus-one.php:160
+msgid ""
+"The plugin's settings have been changed. In order to save them please don't "
+"forget to click the 'Save Changes' button."
+msgstr ""
+"Настройки плагина были изменены. Для того, чтобы сохранить их, пожалуйста, "
+"не забудьте нажать кнопку \"Сохранить\"."
 
-#: google-plus-one.php:157
-msgid "For the correct work of the button do not use it locally or on a free hosting"
-msgstr "Для правильной работы кнопки не используйте её на локальном сервере или бесплатных хостингах"
+#: google-plus-one.php:166
+msgid ""
+"For the correct work of the button do not use it locally or on a free hosting"
+msgstr ""
+"Для корректной работы кнопки не используйте её на локальном сервере или "
+"бесплатных хостингах"
 
-#: google-plus-one.php:158
-msgid "If you want to insert the button in any place on the site, please use the following code:"
-msgstr "Для установки кнопки в любом месте на сайте, пожалуйста, вставьте следующий код:"
+#: google-plus-one.php:167
+msgid ""
+"If you want to insert the button in any place on the site, please use the "
+"following code:"
+msgstr ""
+"Для установки кнопки в любом месте на сайте, пожалуйста, вставьте следующий "
+"код:"
 
-#: google-plus-one.php:163
+#: google-plus-one.php:172
 msgid "Enable Google +1 Button"
 msgstr "Включить кнопку Google +1"
 
-#: google-plus-one.php:167
+#: google-plus-one.php:176
 msgid "Enable or Disable Google+1 JavaScript"
 msgstr "Включить либо Выключить Google+1 JavaScript"
 
-#: google-plus-one.php:172
+#: google-plus-one.php:181
 msgid "Show +1 count in the button"
 msgstr "Показывать счетчик +1 в кнопке"
 
-#: google-plus-one.php:176
+#: google-plus-one.php:185
 msgid "Display counters showing how many times your article has been liked"
 msgstr "Показывать счетчик количества нажатий +1"
 
-#: google-plus-one.php:181
+#: google-plus-one.php:190
 msgid "Button Size"
 msgstr "Размер кнопки"
 
-#: google-plus-one.php:184
-msgid "Standart"
+#: google-plus-one.php:193
+msgid "Standard"
 msgstr "Стандартная"
 
-#: google-plus-one.php:185
+#: google-plus-one.php:194
 msgid "Small"
 msgstr "Маленькая"
 
-#: google-plus-one.php:186
+#: google-plus-one.php:195
 msgid "Medium"
 msgstr "Средняя"
 
-#: google-plus-one.php:187
+#: google-plus-one.php:196
 msgid "Tall"
 msgstr "Высокая"
 
-#: google-plus-one.php:189
+#: google-plus-one.php:198
 msgid "Please choose one of four different sizes of buttons"
 msgstr "Пожалуйста, выберите один из четырех вариантов размера кнопки"
 
-#: google-plus-one.php:193
+#: google-plus-one.php:202
 msgid "Button Position"
 msgstr "Положение кнопки"
 
-#: google-plus-one.php:196
+#: google-plus-one.php:205
 msgid "Before"
 msgstr "Перед"
 
-#: google-plus-one.php:197
+#: google-plus-one.php:206
 msgid "After"
 msgstr "После"
 
-#: google-plus-one.php:198
+#: google-plus-one.php:207
 msgid "Before And After"
 msgstr "Перед и После"
 
-#: google-plus-one.php:200
+#: google-plus-one.php:209
 msgid "Please select location for the button on the page"
 msgstr "Пожалуйста выберите расположение кнопки на странице"
 
-#: google-plus-one.php:204
+#: google-plus-one.php:213
 msgid "Language"
 msgstr "Язык"
 
-#: google-plus-one.php:214
+#: google-plus-one.php:224
 msgid "Select the language to display information on the button"
 msgstr "Выберите язык отображения информации на кнопке"
 
-#: google-plus-one.php:218
+#: google-plus-one.php:229 google-plus-one.php:232 google-plus-one.php:237
+msgid "Use the current site language"
+msgstr "Использовать текущий язык сайта"
+
+#: google-plus-one.php:229 google-plus-one.php:233 google-plus-one.php:238
+msgid "Using"
+msgstr "Используя"
+
+#: google-plus-one.php:233
+msgid "Activate"
+msgstr "Активировать"
+
+#: google-plus-one.php:238
+msgid "Download"
+msgstr "Загрузить"
+
+#: google-plus-one.php:245
 msgid "Show button"
 msgstr "Показывать кнопку"
 
-#: google-plus-one.php:223
+#: google-plus-one.php:250
 msgid "Show in posts"
 msgstr "В постах"
 
-#: google-plus-one.php:229
+#: google-plus-one.php:256
 msgid "Show in pages"
 msgstr "На страницах"
 
-#: google-plus-one.php:235
+#: google-plus-one.php:262
 msgid "Show on the homepage"
 msgstr "На домашней странице"
 
-#: google-plus-one.php:239
+#: google-plus-one.php:266
 msgid "Please select the page on which you want to see the button"
-msgstr "Пожалуйста выберите страницу, на который Вы хотите показать кнопку"
+msgstr "Пожалуйста выберите страницу, на которой Вы хотите показать кнопку"
 
-#: google-plus-one.php:247
-#: google-plus-one.php:280
+#: google-plus-one.php:274 google-plus-one.php:307
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: google-plus-one.php:262
-msgid "Please choose the necessary post types (or single pages) where Google +1 button will be displayed:"
-msgstr "Пожалуйста, выберите те типы постов (или отдельные страницы), где будет отображатся кнопка Google +1:"
+#: google-plus-one.php:289
+msgid ""
+"Please choose the necessary post types (or single pages) where Google +1 "
+"button will be displayed:"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), где будет "
+"отображатся кнопка Google +1:"
 
-#: google-plus-one.php:269
+#: google-plus-one.php:296
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: google-plus-one.php:275
+#: google-plus-one.php:302
 msgid "Example of the site's pages tree"
 msgstr "Пример дерева страниц сайта"
 
-#: google-plus-one.php:285
+#: google-plus-one.php:312
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
 
-#: google-plus-one.php:292
+#: google-plus-one.php:319
 msgid "Unlock premium options by upgrading to a PRO version."
 msgstr "Активируйте премиум опции обновившись до PRO версии."
 
-#: google-plus-one.php:293
+#: google-plus-one.php:320
 msgid "Learn More"
 msgstr "Подробнее"
 
-#: google-plus-one.php:296
+#: google-plus-one.php:323
 msgid "Go"
 msgstr "Перейти на"
 
-#: google-plus-one.php:418
+#: google-plus-one.php:466
 msgid "Support"
 msgstr "Поддержка"
 
