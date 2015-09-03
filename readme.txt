@@ -1,10 +1,10 @@
 ﻿=== Google +1 by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
-Tags: add Google +1 button, Button like, google +1, goggle +1, gogole +1, googgle +1, Google +1 button, Google +1 button in posts, Google +1 button in pages, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google search engine, Google +1 plugin, Google +1 share, Google +1 share button, Like, like button, recommend post on Google+, Share, share button, social, social button, social account
-Requires at least: 3.0
-Tested up to: 4.2.2
-Stable tag: 1.2.4
+Tags: add social buttons, add google share button, add google like button, add Google +1 button, best google like button, best google +1 button, best google +1 share button, best google share button, Button like, free, free google +1 button, free google like button, free google share button, follow, follow button, follow me, follow us, goggle +1, gogole +1, googgle +1, google +1, google +1 button, Google +1 button in pages, Google +1 button in posts, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google +1 plugin, google +1 share, Google +1 share button, Google search engine, google share button, google like button, google profile, Like, like button, recommend post, recommend post on Google+, simple google +1 button, simple google +1 plugin, Share, share button, social, social account, social button, social bookmark, social bookmarking, Social Plugins, social profiles, social share, wp plugin, wp plugins, wp google +1 plugin, wordpress google +1 plugin, wp social plugin, wordpress social plugin
+Requires at least: 3.1
+Tested up to: 4.3
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,20 +16,22 @@ Google +1 allows you to see how many times your page has been liked on Google Se
 
 http://www.youtube.com/watch?v=Z-v0xWTKnuU
 
-<a href="http://www.youtube.com/watch?v=9G640UQeJFE" target="_blank">Video instruction on Installation</a>
+<a href="http://www.youtube.com/watch?v=9G640UQeJFE" target="_blank">Google +1 by BestWebSoft Video instruction on Installation</a>
 
-<a href="http://wordpress.org/plugins/google-one/faq/" target="_blank">FAQ</a>
+<a href="http://wordpress.org/plugins/google-one/faq/" target="_blank">Google +1 by BestWebSoft FAQ</a>
 
-<a href="http://support.bestwebsoft.com" target="_blank">Support</a>
+<a href="http://support.bestwebsoft.com" target="_blank">Google +1 by BestWebSoft Support</a>
 
-<a href="http://bestwebsoft.com/products/google-plus-one/?k=ecb8dc3b466b95504db546e515600a5e" target="_blank">Upgrade to Pro Version</a>
+<a href="http://bestwebsoft.com/products/google-plus-one/?k=ecb8dc3b466b95504db546e515600a5e" target="_blank">Upgrade to Google +1 Pro by BestWebSoft</a>
 
 = Features =
 
-* Actions: Add Google +1 button easily.
-* Display: Select the button position: before the content, after, before and after or using a shortcode.
-* Display: Use one of 4 Sizes of button.
-* Display: Ability to use the current site language for Google +1 button (Using Multilanguage by BestWebSoft)
+* Add Google +1 button easily.
+* Select the button position: before the content, after the content or before and after.
+* Display button using a shortcode.
+* Use one of 4 Sizes of the button.
+* Add the annotation showing how many times your article has been liked.
+* Select button language or use the current site language for Google +1 button (Using <a href="http://bestwebsoft.com/products/multilanguage/" target="_blank">Multilanguage by BestWebSoft</a>)
 
 = Recommended Plugins =
 
@@ -99,6 +101,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.2.5 - 03.09.2015 =
+* NEW : Annotation setting is added.
+* Update : We updated all functionality for wordpress 4.3.
+
 = V1.2.4 - 23.07.2015 =
 * NEW : Ability to use the current site language for Google +1 button (Using Multilanguage by BestWebSoft).
 
@@ -161,6 +167,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.2.5 =
+Annotation setting is added. We updated all functionality for wordpress 4.3.
 
 = V1.2.4 =
 Ability to use the current site language for Google +1 button (Using Multilanguage by BestWebSoft).

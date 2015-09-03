@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google +1 plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-22 21:39+0300\n"
-"PO-Revision-Date: 2015-07-22 21:39+0300\n"
-"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"POT-Creation-Date: 2015-09-03 11:29+0300\n"
+"PO-Revision-Date: 2015-09-03 11:33+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -16,80 +16,65 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:32 google-plus-one.php:151
+#: google-plus-one.php:32
+#: google-plus-one.php:160
 msgid "Google +1 Settings"
 msgstr "Установки Google +1"
 
-#: google-plus-one.php:130
+#: google-plus-one.php:139
 msgid "Settings saved"
 msgstr "Установки збережено"
 
-#: google-plus-one.php:138
+#: google-plus-one.php:147
 msgid "All plugin settings were restored."
 msgstr "Всі налаштування плагіну було скинуто до стандартних."
 
-#: google-plus-one.php:153 google-plus-one.php:451 google-plus-one.php:464
+#: google-plus-one.php:162
+#: google-plus-one.php:463
+#: google-plus-one.php:476
 msgid "Settings"
 msgstr "Установки"
 
-#: google-plus-one.php:154
+#: google-plus-one.php:163
 msgid "Extra settings"
 msgstr "Додаткові налаштування"
 
-#: google-plus-one.php:155 google-plus-one.php:465
+#: google-plus-one.php:164
+#: google-plus-one.php:477
 msgid "FAQ"
 msgstr "FAQ"
 
-#: google-plus-one.php:156
+#: google-plus-one.php:165
 msgid "Go PRO"
 msgstr "Перейти на Pro версію"
 
-#: google-plus-one.php:160
+#: google-plus-one.php:169
 msgid "Notice:"
 msgstr "Нагадування:"
 
-#: google-plus-one.php:160
-msgid ""
-"The plugin's settings have been changed. In order to save them please don't "
-"forget to click the 'Save Changes' button."
-msgstr ""
-"Налаштування плагіну було змінено. Для того, щоб зберегти ці зміни, не "
-"забудьте нажати кнопку \"Зберегти зміни\"."
+#: google-plus-one.php:169
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Налаштування плагіну було змінено. Для того, щоб зберегти ці зміни, не забудьте нажати кнопку \"Зберегти зміни\"."
 
-#: google-plus-one.php:166
-msgid ""
-"For the correct work of the button do not use it locally or on a free hosting"
-msgstr ""
-"Для коректної роботи кнопки не використовуйте її на локальному сервері або "
-"безкоштовних хостингах."
+#: google-plus-one.php:175
+msgid "For the correct work of the button do not use it locally or on a free hosting"
+msgstr "Для коректної роботи кнопки не використовуйте її на локальному сервері або безкоштовних хостингах."
 
-#: google-plus-one.php:167
-msgid ""
-"If you want to insert the button in any place on the site, please use the "
-"following code:"
-msgstr ""
-"Для установки кнопки у будь-якому місці на сайті, будь ласка, вставте цей "
-"код:"
+#: google-plus-one.php:176
+msgid "If you want to insert the button in any place on the site, please use the following code:"
+msgstr "Для установки кнопки у будь-якому місці на сайті, будь ласка, вставте цей код:"
 
-#: google-plus-one.php:172
+#: google-plus-one.php:181
 msgid "Enable Google +1 Button"
 msgstr "Увімкнути кнопку Google +1"
 
-#: google-plus-one.php:176
+#: google-plus-one.php:185
 msgid "Enable or Disable Google+1 JavaScript"
 msgstr "Увімкнути або вимкнути Google+1 JavaScript"
 
-#: google-plus-one.php:181
-msgid "Show +1 count in the button"
-msgstr "Показувати лічильник +1 у кнопці"
-
-#: google-plus-one.php:185
-msgid "Display counters showing how many times your article has been liked"
-msgstr "Відображати лічильник кількості натиснень +1"
-
 #: google-plus-one.php:190
-msgid "Button Size"
-msgstr "Розмір кнопки"
+msgid "Size"
+msgstr "Розмір"
 
 #: google-plus-one.php:193
 msgid "Standard"
@@ -112,24 +97,24 @@ msgid "Please choose one of four different sizes of buttons"
 msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
 
 #: google-plus-one.php:202
-msgid "Button Position"
-msgstr "Розташування кнопки"
+msgid "Annotation"
+msgstr "Примітка"
 
 #: google-plus-one.php:205
-msgid "Before"
-msgstr "Перед"
+msgid "Inline"
+msgstr "вбудована"
 
 #: google-plus-one.php:206
-msgid "After"
-msgstr "Після"
+msgid "Bubble"
+msgstr "спливаюча підказка"
 
 #: google-plus-one.php:207
-msgid "Before And After"
-msgstr "Перед та після"
+msgid "None"
+msgstr "немає"
 
 #: google-plus-one.php:209
-msgid "Please select location for the button on the page"
-msgstr "Будь ласка, оберіть розташування кнопки на сторінці"
+msgid "Display counters showing how many times your article has been liked"
+msgstr "Відображати лічильник кількості натиснень +1"
 
 #: google-plus-one.php:213
 msgid "Language"
@@ -139,11 +124,15 @@ msgstr "Мова"
 msgid "Select the language to display information on the button"
 msgstr "Оберіть мову відображення інформації на кнопці"
 
-#: google-plus-one.php:229 google-plus-one.php:232 google-plus-one.php:237
+#: google-plus-one.php:229
+#: google-plus-one.php:232
+#: google-plus-one.php:237
 msgid "Use the current site language"
 msgstr "Використовувати поточну мову сайту"
 
-#: google-plus-one.php:229 google-plus-one.php:233 google-plus-one.php:238
+#: google-plus-one.php:229
+#: google-plus-one.php:233
+#: google-plus-one.php:238
 msgid "Using"
 msgstr "Використовуючи"
 
@@ -156,61 +145,94 @@ msgid "Download"
 msgstr "Завантажити"
 
 #: google-plus-one.php:245
+msgid "Button Position"
+msgstr "Розташування кнопки"
+
+#: google-plus-one.php:248
+msgid "Before"
+msgstr "Перед"
+
+#: google-plus-one.php:249
+msgid "After"
+msgstr "Після"
+
+#: google-plus-one.php:250
+msgid "Before And After"
+msgstr "Перед та після"
+
+#: google-plus-one.php:252
+msgid "Please select location for the button on the page"
+msgstr "Будь ласка, оберіть розташування кнопки на сторінці"
+
+#: google-plus-one.php:256
 msgid "Show button"
 msgstr "Відображати кнопку"
 
-#: google-plus-one.php:250
+#: google-plus-one.php:261
 msgid "Show in posts"
 msgstr "В постах"
 
-#: google-plus-one.php:256
+#: google-plus-one.php:267
 msgid "Show in pages"
 msgstr "На сторінках"
 
-#: google-plus-one.php:262
+#: google-plus-one.php:273
 msgid "Show on the homepage"
 msgstr "На домашній сторінці"
 
-#: google-plus-one.php:266
+#: google-plus-one.php:277
 msgid "Please select the page on which you want to see the button"
 msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопку"
 
-#: google-plus-one.php:274 google-plus-one.php:307
-msgid "Save Changes"
-msgstr "Зберегти зміни"
-
 #: google-plus-one.php:289
-msgid ""
-"Please choose the necessary post types (or single pages) where Google +1 "
-"button will be displayed:"
-msgstr ""
-"Будь ласка, оберіть потрібний тип посту (чи сторінки), де буде відображатись "
-"кнопка Google+1:"
+msgid "\"+1\" for an entire site on every page"
+msgstr "\"+1\" для всього сайту на кожній сторінці"
 
-#: google-plus-one.php:296
-msgid "Show URL for pages"
-msgstr "Відображати URL сторінок"
+#: google-plus-one.php:292
+msgid "Notice: This option does not create an extra button. This option merely allows your users to +1 the entire website when this option is enabled, or a single post when this option is disabled, when clicking the regular \"+1\" button."
+msgstr "Увага: ця опція не створює додаткову кнопку. Ця опція дозволяє при кліку користувачами на стандартну кнопку плагіна ставити \"+1\" усьому сайту , якщо ця опція увімкнена, або ставити \"+1\" окремим постам, якщо опція вимкнена."
 
-#: google-plus-one.php:302
-msgid "Example of the site's pages tree"
-msgstr "Приклад дерева сторінок сайту"
-
-#: google-plus-one.php:312
+#: google-plus-one.php:297
+#: google-plus-one.php:332
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
 
-#: google-plus-one.php:319
-msgid "Unlock premium options by upgrading to a PRO version."
-msgstr "Зробити доступними преміум-опції, перейшовши на PRO версію."
+#: google-plus-one.php:304
+#: google-plus-one.php:337
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
 
-#: google-plus-one.php:320
+#: google-plus-one.php:306
+#: google-plus-one.php:339
 msgid "Learn More"
 msgstr "Докладніше"
 
-#: google-plus-one.php:323
-msgid "Go"
-msgstr "Перейти"
+#: google-plus-one.php:313
+#: google-plus-one.php:331
+msgid "Save Changes"
+msgstr "Зберегти зміни"
 
-#: google-plus-one.php:466
+#: google-plus-one.php:325
+msgid "Please choose the necessary post types (or single pages) where Google +1 button will be displayed:"
+msgstr "Будь ласка, оберіть потрібний тип посту (чи сторінки), де буде відображатись кнопка Google+1:"
+
+#: google-plus-one.php:328
+msgid "Show URL for pages"
+msgstr "Відображати URL сторінок"
+
+#: google-plus-one.php:330
+msgid "Example of the site's pages tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: google-plus-one.php:478
 msgid "Support"
 msgstr "Підтримка"
+
+#~ msgid "Show +1 count in the button"
+#~ msgstr "Показувати лічильник +1 у кнопці"
+
+#~ msgid "Button Size"
+#~ msgstr "Розмір кнопки"
+
+#~ msgid "Go"
+#~ msgstr "Перейти"
