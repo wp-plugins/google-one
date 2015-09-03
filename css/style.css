@@ -1,0 +1,12 @@
+/*
+* Plugin css
+*/
+.gglplsn_form-table th {
+	padding-left: 0;
+}
+.gglplsn_form-table td p {
+    margin: 0;
+}
+.gglplsn_share {
+	clear: both;
+}
