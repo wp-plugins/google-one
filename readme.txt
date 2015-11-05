@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: add social buttons, add google share button, add google like button, add Google +1 button, best google like button, best google +1 button, best google +1 share button, best google share button, Button like, free, free google +1 button, free google like button, free google share button, follow, follow button, follow me, follow us, goggle +1, gogole +1, googgle +1, google +1, google +1 button, Google +1 button in pages, Google +1 button in posts, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google +1 plugin, google +1 share, Google +1 share button, Google search engine, google share button, google like button, google profile, Like, like button, recommend post, recommend post on Google+, simple google +1 button, simple google +1 plugin, Share, share button, social, social account, social button, social bookmark, social bookmarking, Social Plugins, social profiles, social share, wp plugin, wp plugins, wp google +1 plugin, wordpress google +1 plugin, wp social plugin, wordpress social plugin
-Requires at least: 3.1
-Tested up to: 4.3
-Stable tag: 1.2.5
+Requires at least: 3.8
+Tested up to: 4.3.1
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 
 = Translation =
 
+* Hungarian (hu_HU) (thanks to <a href="mailto:solarside09@gmail.com">Peter Aprily</a> www.aprily.com)
 * Russian (ru_RU)
 * Ukrainian (uk)
 
@@ -97,9 +98,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 1. Google +1 Settings page.
 2. Google +1 Before and After the post.
-3. Google +1 Using shortcode in widget area.
+3. Adding Google +1 shortcode to your post or page.
+4. Displaying Google +1 Button in your post via the shortcode.
 
 == Changelog ==
+
+= V1.2.6 - 05.11.2015 =
+* Update : Textdomain was changed.
+* NEW : A button for Google +1 Button shortcode inserting to the content.
+* NEW : Hungarian language file.
 
 = V1.2.5 - 03.09.2015 =
 * NEW : Annotation setting is added.
@@ -167,6 +174,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Bugfix : The bug of position in the admin menu is fixed. 
 
 == Upgrade Notice ==
+
+= V1.2.6 =
+Textdomain was changed. A button for Google +1 Button shortcode inserting to the content was added. Hungarian language file is added to the plugin.
 
 = V1.2.5 =
 Annotation setting is added. We updated all functionality for wordpress 4.3.
